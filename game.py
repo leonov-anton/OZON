@@ -47,3 +47,5 @@ while attempts != 0:
     print("Осталось "+str(attempts)+" попыток")
 else:
     print("Не страшно, поробуешь в дургой раз! Мое число было"+str(number))
+
+
