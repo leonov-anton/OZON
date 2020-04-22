@@ -5,5 +5,7 @@ zero = 0
 # print(red)
 # print(black)
 # print(sum(red+black))
-numbers = red+black+zero
-print(sorted(numbers))
+numbers = red+black
+numbers.append(0)
+# print(sorted(numbers))
+
