@@ -26,7 +26,9 @@ elif bet == 'черное':
     else:
         print("Не повезло, выпало: " + str(num)+" "+collor)
 else:
-    if num == int(bet):
+    if num == int(bet) and num == 0:
+        print("Ты выиграл!!! Выпало зеро")
+    elif num == int(bet) and num != 0:
         print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
     elif num == 0:
         print("Не повезло, выпало зеро")
