@@ -1,8 +1,10 @@
 import random
 red = [i for i in range(2, 37, 2)]
 black = [j for j in range(1, 37, 2)]
-print("Числа на красном: "+str(red)+". \nЧисла на черном: "+str(black))
-#не знаю как вывести тут без ковычек и запятых в этом случае
+print("Числа на красном: ", end = '')
+print(*red)
+print("Числа на черном: ", end = '')
+print(*black)
 numbers = red+black
 numbers.append(0)
 num = random.choice(numbers)
