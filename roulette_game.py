@@ -15,26 +15,19 @@ if num in red:
 elif num in black:
     collor = "черное"
 if bet == 'красное':
-    for j in red:
-        if num in red:
-            print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
-        elif num == 0:
-            print("Не повезло, выпало зеро")
-            # break
-        else:
-            print("Не повезло, выпало: " + str(num)+" "+collor)
-            # break
+    if num in red:
+        print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
+    elif num == 0:
+        print("Не повезло, выпало зеро")
+    else:
+        print("Не повезло, выпало: " + str(num)+" "+collor)
 elif bet == 'черное':
-    for i in black:
-        if num in black:
-            print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
-            # break
-        elif num == 0:
-            print("Не повезло, выпало зеро")
-            # break
-        else:
-            print("Не повезло, выпало: " + str(num)+" "+collor)
-            # break
+    if num in black:
+        print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
+    elif num == 0:
+        print("Не повезло, выпало зеро")
+    else:
+        print("Не повезло, выпало: " + str(num)+" "+collor)
 else:
     if num == int(bet):
         print("Ты выиграл!!! Выпало " + str(num)+" "+collor)
