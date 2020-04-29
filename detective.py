@@ -15,8 +15,6 @@ print("Живет рядом, работает рядом и имеет Шевр
 print(*shevrole_owner & work_near & live_near)
 print("Живет рядом и имеет Шевроле: ", end = '')
 print(*shevrole_owner & live_near)
-print("Живет рядом и работает рядом: ", end = '')
-print(*work_near & live_near)
 print("Работает рядом и имеет Шевроле: ", end = '')
 print(*shevrole_owner & work_near)
 print("")
@@ -25,46 +23,46 @@ full_list = (shevrole_owner | work_near | live_near)
 print(full_list)
 
 
-print("СПОСОБ 2:")
-
-a = 0
-for i in shevrole_owner:
-    for j in live_near:
-        for q in full_list:
-            if i == j == q:
-                print(i + " - владеет шевроле и живет и рабоатет рядом")
-                a += 1
-else:
-    if a == 0:
-        print("Никто не живет и не работает рядом, а так же не владеет Шевроле одновременно")
-a = 0
-for i in shevrole_owner:
-    for j in live_near:
-        if i == j:
-            print(i + " - владеет Шевроле и живет рядом")
-            a += 1
-else:
-    if a == 0:
-        print("Никто не живет рядом, а так же не владеет Шевроле одновременно")
-a = 0
-for i in shevrole_owner:
-    for j in work_near:
-        if i == j:
-            print(i + " - владеет Шевроле и живет рядом")
-            a += 1
-else:
-    if a == 0:
-        print("Никто не работает рядом, а так же не владеет Шевроле одновременно")
-a = 0
-for i in live_near:
-    for j in work_near:
-        if i == j:
-            print(i + " - владеет Шевроле и живет рядом")
-            a += 1
-else:
-    if a == 0:
-        print("Никто не живет и не работает рядом одновременно")
-print("")
+# print("СПОСОБ 2:")
+#
+# a = 0
+# for i in shevrole_owner:
+#     for j in live_near:
+#         for q in full_list:
+#             if i == j == q:
+#                 print(i + " - владеет шевроле и живет и рабоатет рядом")
+#                 a += 1
+# else:
+#     if a == 0:
+#         print("Никто не живет и не работает рядом, а так же не владеет Шевроле одновременно")
+# a = 0
+# for i in shevrole_owner:
+#     for j in live_near:
+#         if i == j:
+#             print(i + " - владеет Шевроле и живет рядом")
+#             a += 1
+# else:
+#     if a == 0:
+#         print("Никто не живет рядом, а так же не владеет Шевроле одновременно")
+# a = 0
+# for i in shevrole_owner:
+#     for j in work_near:
+#         if i == j:
+#             print(i + " - владеет Шевроле и живет рядом")
+#             a += 1
+# else:
+#     if a == 0:
+#         print("Никто не работает рядом, а так же не владеет Шевроле одновременно")
+# a = 0
+# for i in live_near:
+#     for j in work_near:
+#         if i == j:
+#             print(i + " - владеет Шевроле и живет рядом")
+#             a += 1
+# else:
+#     if a == 0:
+#         print("Никто не живет и не работает рядом одновременно")
+# print("")
 print("СПОСОБ 3:")
 
 for i in full_list:
@@ -74,5 +72,3 @@ for i in full_list:
         print(i + " - работает рядом и имеет Шевроле")
     elif i in live_near and i in shevrole_owner:
         print(i + " - живет рядом и имеет Шевроле")
-    elif i in live_near and i in work_near:
-        print(i + " - живет и работает рядом")
