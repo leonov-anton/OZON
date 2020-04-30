@@ -1,13 +1,12 @@
-# def prime(number):
-#     number = int(input("Введите натуральное число: "))
-#     if number <= 0:
-#         number = int(input("Вы ввели не натуральное число, попробуйте еще раз: "))
-#     elif
+def prime(number):
+    for i in range(2, number):
+        if number % i == 0:
+            a = "не простое число"
+            print("Кроме себя и единицы " + str(number) + " делится так же на " + str(i))
+            break
+    else:
+        a = "простое число"
+    print(str(number) + " " + a)
 
 number = int(input("Введите натуральное число: "))
-for i in range(2, number):
-    if number % i == 0:
-        print("не простое")
-        break
-else:
-    print("простое")
+prime(number)
