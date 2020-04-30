@@ -6,6 +6,7 @@ def translate(text):
     translated = text.translate(translation_table)
     translated = translated.split()
     translated = "".join(translated)
+    print(translated)
     return translatedText
 
 
