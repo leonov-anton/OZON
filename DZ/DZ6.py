@@ -11,6 +11,6 @@ for x in int_line:
     mean = summa/len(x)
     result.write("Sum " + str(m) + " line: " +str(summa)+'\n')
     result.write("Mean " + str(m) + " line: " + str(mean)+'\n')
-    print(summa, mean)
+    # print(summa, mean)
 data.close()
 result.close()
