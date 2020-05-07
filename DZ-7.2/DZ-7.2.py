@@ -7,10 +7,10 @@ def diary(text):
     file_name = str((date) + '/' + time.strftime("%H.%M %d.%m.%Y", time.localtime()) + '.txt')
     try:
         os.mkdir(date)
-        note = open(file_name, 'tw', encoding='utf-8')
+        note = open(file_name, 'w', encoding='utf-8')
         note.write(text)
     except FileExistsError:
-        note = open(file_name, 'tw', encoding='utf-8')
+        note = open(file_name, 'w', encoding='utf-8')
         note.write(text)
     note.close()
 
