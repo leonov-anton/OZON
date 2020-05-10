@@ -22,7 +22,7 @@ discount = open('discount.txt', 'r', encoding='utf-8')
 
 file_name = ''
 for i in range(7):
-    file_name += (random.choice('abcdefghijklmnopqrstuvwxyz'))
+    file_name += random.choice('abcdefghijklmnopqrstuvwxyz')
 
 new_price = open(file_name+'.txt', 'a', encoding='utf-8')
 
