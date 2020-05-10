@@ -10,14 +10,14 @@ def apply_discount(product, discount):
 data = open('data.txt', 'r', encoding='utf-8')
 discount = open('discount.txt', 'r', encoding='utf-8')
 
-price_list = []
-for line in data:
-    a, b = line.split(', ')
-    price_1 = dict([('товар', a), ('цена', int(b))])
-    price_list.append(price_1)
+# price_list = []
+# for line in data:
+#     a, b = line.split(', ')
+#     price_1 = dict([('товар', a), ('цена', int(b))])
+#     price_list.append(price_1)
 # print(price_list)
 
-discount_list = [float(i) for i in discount]
+# discount_list = [float(i) for i in discount]
 # print(discount_list)
 
 file_name = ''
@@ -26,6 +26,11 @@ for i in range(7):
 
 new_price = open(file_name+'.txt', 'a', encoding='utf-8')
 
-for price, discount in zip(price_list, discount_list):
-    new_price.write(str(apply_discount(price, discount))+'\n')
+for line, i in zip(data, discount):
+    a, b = line.split(', ')
+    try:
+        new_price.write(str(apply_discount({'товар': a, 'цена': int(b)}, float(i)))+'\n')
+    except AssertionError:
+        # print("Слишком большая скидка для " + price['товар'].upper())
+        new_price.write("Слишком большая скидка для " + a.upper()+'\n')
 new_price.close()
