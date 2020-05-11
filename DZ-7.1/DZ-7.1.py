@@ -31,7 +31,6 @@ for line, i in zip(data, discount):
     try:
         new_price.write(str(apply_discount({'товар': name, 'цена': int(price)}, float(i)))+'\n')
     except AssertionError:
-        # print("Слишком большая скидка для " + price['товар'].upper())
         new_price.write("Слишком большая скидка для " + name.upper()+'\n')
 
 new_price.close()
