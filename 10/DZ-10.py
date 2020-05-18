@@ -11,12 +11,11 @@ def list_hrec(n):
     return list_iter(2, 5, n)
 
 
-def list_iter(iter, counter, n):
-    if iter > counter:
+def list_iter(iter, limit, n):
+    if iter > limit:
         return b
-    else:
-        b.append(n ** iter)
-        return list_iter(iter + 1, counter, n)
+    b.append(n ** iter)
+    return list_iter(iter + 1, limit, n)
 
 
 n = int(input("Введите число: "))
