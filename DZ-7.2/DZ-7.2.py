@@ -10,7 +10,7 @@ def diary(text):
         note = open(file_name, 'w', encoding='utf-8')
         note.write(text)
     except FileExistsError:
-        note = open(file_name, 'w', encoding='utf-8')
+        note = open(file_name, 'a', encoding='utf-8')
         note.write(text)
     note.close()
 
