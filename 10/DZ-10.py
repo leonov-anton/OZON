@@ -2,14 +2,14 @@ from simple_benchmark import benchmark
 import matplotlib.pyplot as plt
 import time
 
-def cicle_list(n):
-    for i in range(2, 6):
+def cicle_list(n):  # добавить m
+    for i in range(2, 6): # добавить m
         a.append(n ** i)
     return a
 
 
-def list_hrec(n):
-    return list_iter(2, 5, n)
+def list_hrec(n): # добавить m
+    return list_iter(2, 5, n) # добавить m
 
 
 def list_iter(iter, limit, n):
