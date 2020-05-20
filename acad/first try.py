@@ -23,10 +23,14 @@ p2 = APoint(50, 25)
 # for i in range(4):
 #     text = acad.model.AddMText('Hi %s!' % i, p1, 2.5)
 #
-# points = []
-# for obj in acad.iter_objects('Circle'):
-#     print(obj.Center)
-#     points.append(obj.Center)
+points = []
+for obj in acad.iter_objects('Circle'):
+    if obj.Layer == 'KG':
+        points.append(obj.Center)
+        print(len(points))
+
+    # print(obj.Layer)
+#     points.append(obj.Name)
 # print(points)
 
 # a = 0

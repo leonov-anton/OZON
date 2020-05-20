@@ -2,14 +2,14 @@ from simple_benchmark import benchmark
 import matplotlib.pyplot as plt
 import time
 
-def cicle_list(n):  # добавить m
-    for i in range(2, 6): # добавить m
+def cicle_list(n, m):  # добавить m
+    for i in range(2, m+1): # добавить m
         a.append(n ** i)
     return a
 
 
-def list_hrec(n): # добавить m
-    return list_iter(2, 5, n) # добавить m
+def list_hrec(n, m): # добавить m
+    return list_iter(2, m, n) # добавить m
 
 
 def list_iter(iter, limit, n):
@@ -21,9 +21,15 @@ def list_iter(iter, limit, n):
 
 n = int(input("Введите число: "))
 t = time.time()
-# m = int(input("Введите максимальную степень: "))
+m = int(input("Введите максимальную степень: "))
 a = []
 b = []
+# t = time.time()
+
+# print(cicle_list(n, m))
+# print(list_hrec(n, m))
+#
+# print("Программа выполнялась:", time.time() - t, "c")
 
 defs = [cicle_list, list_hrec]
 
