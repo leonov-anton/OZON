@@ -12,7 +12,7 @@ class User:
     def __init__(self, login, password):
 
         """
-        Инициализация атребутов класса
+        Инициализация атрибутов класса
 
         :param login: Логин в системе.
 
@@ -39,7 +39,7 @@ class User:
 
         """
         Проверка зарегистрирован ли пользователь в системе.
-        В случае отсутствия регистрация.
+        В случае отсутствия - регистрация.
 
         :return: Добавляет в список логин и пароль пользователя.
 
@@ -54,9 +54,7 @@ class User:
             print("Супер!")
             pass
         elif qest == 'Нет':
-            verif_login = re.match(r"^[a-zA-Z0-9_\.\-]{5,20}", self.login)
-            verif_pass = re.match(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password)
-            if verif_login and verif_pass:
+            if self.verif_login() and self.verif_password():
                 users_list = open(file_name+'.txt', 'a', encoding='utf-8')
                 users_list.write(self.login + ', ' + self.password + '\n')
                 users_list.close()
@@ -67,15 +65,14 @@ class User:
 
     # !!!НЕ ПОЛУЧАЕТСЯ В МЕТОДЕ greet обратиться к этим методам!!!
 
-    # def verif(self, login):
-    #     if re.match(r"^[a-zA-Z0-9_\.\-]{5,20}", self.login):
-    #         return login
-    #     print("Ваш логин не соответствует правилам")
-    #
-    #
-    # def verif_password(self, user_password):
-    #     if re.match("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password):
-    #         return user_password
-    #     print("Ваш пароль не соответствует правилам")
+    def verif_login(self):
+        if re.match(r"^[a-zA-Z0-9_\.\-]{5,20}", self.login):
+            return True
+        return False
 
+
+    def verif_password(self, user_password):
+        if re.match("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password):
+            return True
+        return False
 
