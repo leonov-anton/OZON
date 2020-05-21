@@ -2,6 +2,7 @@ from simple_benchmark import benchmark
 import matplotlib.pyplot as plt
 import time
 
+
 def cicle_list(n, m):  # добавить m
     for i in range(2, m+1): # добавить m
         a.append(n ** i)
@@ -35,7 +36,7 @@ defs = [cicle_list, list_hrec]
 
 arguments = {}
 
-for i in range(100):
+for i in range(1000):
     arguments['i' + str(i)] = i
 
 argument_name = 'size of number'
