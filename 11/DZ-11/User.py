@@ -48,7 +48,7 @@ class User:
         file_name = ''
         for i in range(7):
             file_name += random.choice('abcdefghijklmnopqrstuvwxyz')
-        qest = input("Вы разерестрированный в системе? (Да/Нет): " '\n').capitalize()
+        qest = input("Вы зарегестрированны в системе? (Да/Нет): " '\n').capitalize()
         if qest == 'Да':
             # Проверить есть ли в списке логин и пароль, а пока так
             print("Супер!")
