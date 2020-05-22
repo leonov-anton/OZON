@@ -4,6 +4,7 @@ import random
 class User:
 
     """
+    # TODO: translate in to english
     Класс данных пользователей системы
 
     """
@@ -32,7 +33,7 @@ class User:
 
         self.login = login
         self.password = password
-        # self.email = email
+        # TODO: добавить self.email = email
 
 
     def greet(self):
@@ -50,7 +51,7 @@ class User:
             file_name += random.choice('abcdefghijklmnopqrstuvwxyz')
         qest = input("Вы зарегестрированны в системе? (Да/Нет): " '\n').capitalize()
         if qest == 'Да':
-            # Проверить есть ли в списке логин и пароль, а пока так
+            # TODO: Проверить есть ли в списке логин и пароль, а пока так
             print("Супер!")
             pass
         elif qest == 'Нет':
@@ -74,4 +75,3 @@ class User:
         if re.match("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password):
             return True
         return False
-
