@@ -63,7 +63,6 @@ class User:
             else:
                 print("Что-то не то ввели")
 
-    # !!!НЕ ПОЛУЧАЕТСЯ В МЕТОДЕ greet обратиться к этим методам!!!
 
     def verif_login(self):
         if re.match(r"^[a-zA-Z0-9_\.\-]{5,20}", self.login):
