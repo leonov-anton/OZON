@@ -1,4 +1,4 @@
-def firmat_name(first, last, otch=''):
+def format_name(first, last, otch=''):
     """Правильное форматрирование имени"""
     if otch:
         full_name = f'{first.title()} {last.title()} {otch.title()}'
