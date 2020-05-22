@@ -64,7 +64,6 @@ class User:
                 print("Что-то не то ввели")
 
 
-
     def verif_login(self):
         if re.match(r"^[a-zA-Z0-9_\.\-]{5,20}", self.login):
             return True
