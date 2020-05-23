@@ -72,6 +72,6 @@ class User:
 
 
     def verif_password(self):
-        if re.match("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password):
+        if re.match(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,26}", self.password):
             return True
         return False
