@@ -1,5 +1,5 @@
 import unittest
-from survey import Survey
+from survey import survey
 
 class TestSurvey(unittest.TestCase):
     """Тесты для класса Survey"""
@@ -13,5 +13,11 @@ class TestSurvey(unittest.TestCase):
     def test_save_single_answer(self):
         self.mysurvey.save_answer(self.answers[0])
         self.assertIn(self.answers[0], self.mysurvey.answers)
+
+    def test_save_triple_answer(self):
+        for answer in self.answers:
+            self.mysurvey.save_answer(answer)
+        for answer in self.answers:
+            self.assertIn(answer, self.mysurvey.answers)
 
 unittest.main()

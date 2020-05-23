@@ -1,4 +1,4 @@
-class Survey:
+class survey:
     """ Собирает ответы на вопросы """
 
     def __init__(self, quest):
@@ -15,4 +15,3 @@ class Survey:
         print("Survey resolts: ")
         for answer in self.answers:
             print(f'- {answer}')
-
