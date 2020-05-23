@@ -1,17 +1,10 @@
 import unittest
-from calc import calcuiator
+from Calc import Calculator
 
 class CalculatorTesting(unittest.TestCase):
     """
     Tests for Calculetor
     """
-
-    def setUp(self):
-        x = 9
-        y = 3
-        self.my_x = calcuiator(x)
-        self.my_y = calcuiator(y)
-
 
 
     def input_number_test(self):
@@ -20,5 +13,7 @@ class CalculatorTesting(unittest.TestCase):
         Input number testing
 
         """
+        myNumbers = Calculator('9', '+', '9')
+        self.assert(myNumbers, '10')
 
-
+unittest.main()

@@ -1,8 +1,9 @@
 from Calc import Calculator
 
-x = input("Введите первое число: " '\n')
-y = input("Введите второе число: " '\n')
+x = input("Введите первое число: ")
+oper = input("Введите знак операции: ")
+y = input("Введите второе число: ")
 
-work = Calculator(x, y)
+work = Calculator(x, oper, y)
 
 print(work.count())

@@ -9,53 +9,44 @@ class Calculator:
     """
 
 
-    def __init__(self, first, second):
+    def __init__(self, first, oper, second):
 
         self.first = first
+        self.operation = oper
         self.second = second
 
 
     def count(self):
-        f = open('operation.json', 'a')
+        f = open('operation_log.json', 'a')
         if self.verif_x() and self.verif_y():
-            print("Что будем делать с этим?")
-            oper = input("Сложение - +, вычитание - , умножение - *, деление - /, степень - ^, корень - кор: ")
-            if oper == "+":
+            if self.operation == "+":
                 json.dump(f"{float(self.first)} + {float(self.second)} = "
                           f"{float(self.first) + float(self.second)}", f)
-                pass
-            elif oper == "-":
+            elif self.operation == "-":
                 json.dump(f"{float(self.first)} - {float(self.second)} = "
                           f"{float(self.first) - float(self.second)}", f)
-                pass
-            elif oper == "*":
+            elif self.operation == "*":
                 json.dump(f"{float(self.first)} * {float(self.second)} = "
                           f"{float(self.first) * float(self.second)}", f)
-                pass
-            elif oper == "/":
+            elif self.operation == "/":
                 json.dump(f"{float(self.first)} / {float(self.second)} = "
                           f"{float(self.first) / float(self.second)}", f)
-                pass
-            elif oper == "^":
+            elif self.operation == "^":
                 r = 1
                 for i in range(int(self.second)):
                     r = r * float(self.first)
                 json.dump(r, f)
-                pass
-            elif oper == "кор":
+            elif self.operation == "кор":
                 if self.verif_neg_x():
                     r = 1
                     for i in range(10):
                         r = (r + (float(self.first) / r)) / 2
                     json.dump(r, f)
-                    pass
                 print("Я не умею брать корень отрицательного числа")
-                pass
         elif self.verif_x():
             print("Значение Y не число")
-            pass
-        print("Значение X не число")
-        pass
+        else:
+            print("Значение X не число")
 
 
     def verif_x(self):
