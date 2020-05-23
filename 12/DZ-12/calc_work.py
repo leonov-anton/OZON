@@ -1,3 +1,8 @@
-from calc import calculator
+from Calc import Calculator
 
-x = Calculator(9, 3)
+x = input("Введите первое число: " '\n')
+y = input("Введите второе число: " '\n')
+
+work = Calculator(x, y)
+
+print(work.count())

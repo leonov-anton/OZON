@@ -1,51 +1,53 @@
 import re
+import json
 
-class Calculator
+class Calculator:
+
     """
-    Сalculator simple math functions
+    Сalculator of simple math functions
     
     """
 
 
-    def __init__(self, x, y):
-        """
+    def __init__(self, first, second):
 
-        :param x: first number
-        :param y: second number
-
-        """
-        self.x = 0
-        self.y = 0
+        self.first = first
+        self.second = second
 
 
     def count(self):
+        f = open('operation.json', 'a')
         if self.verif_x() and self.verif_y():
             print("Что будем делать с этим?")
             oper = input("Сложение - +, вычитание - , умножение - *, деление - /, степень - ^, корень - кор: ")
             if oper == "+":
-                return self.x + self.y
+                json.dump(f"{float(self.first)} + {float(self.second)} = "
+                          f"{float(self.first) + float(self.second)}", f)
                 pass
             elif oper == "-":
-                return self.x - self.y
+                json.dump(f"{float(self.first)} - {float(self.second)} = "
+                          f"{float(self.first) - float(self.second)}", f)
                 pass
             elif oper == "*":
-                return self.x * self.y
+                json.dump(f"{float(self.first)} * {float(self.second)} = "
+                          f"{float(self.first) * float(self.second)}", f)
                 pass
             elif oper == "/":
-                return self.x / self.y
+                json.dump(f"{float(self.first)} / {float(self.second)} = "
+                          f"{float(self.first) / float(self.second)}", f)
                 pass
             elif oper == "^":
-                for i in range(self.y):
-                    r = 1
-                    r = r * self.x
-                return r
+                r = 1
+                for i in range(int(self.second)):
+                    r = r * float(self.first)
+                json.dump(r, f)
                 pass
             elif oper == "кор":
                 if self.verif_neg_x():
+                    r = 1
                     for i in range(10):
-                        r = 1
-                        r = (r + (self.x / r)) / 2
-                    return r
+                        r = (r + (float(self.first) / r)) / 2
+                    json.dump(r, f)
                     pass
                 print("Я не умею брать корень отрицательного числа")
                 pass
@@ -56,47 +58,19 @@ class Calculator
         pass
 
 
-    # def addition(self):
-    #     r = self.x + self.y
-    #
-    #
-    # def subtraction(self):
-    #     r = self.x - self.y
-    #
-    #
-    # def multiplication(self):
-    #     r = self.x * self.y
-    #
-    #
-    # def division(self):
-    #     r = self.x / self.y
-    #
-    #
-    # def exponentiation(self):
-    #     for i in range(self.y):
-    #         r = 1
-    #         r = self.r * self.x
-    #
-    #
-    # def square(self):
-    #     for i in range(10):
-    #         r = 1
-    #         r = (self.r + (self.x / self.r)) / 2
-
-
     def verif_x(self):
-        if re.match(r"(-)*[0-9]+(\.)*[0-9]*", self.x)
+        if re.match("^(-)*[0-9]+(\.)*[0-9]*", self.first):
             return True
         return False
 
 
     def verif_y(self):
-        if re.match(r"(-)*[0-9]+(\.)*[0-9]*", self.y)
+        if re.match("^(-)*[0-9]+(\.)*[0-9]*", self.second):
             return True
         return False
 
 
     def verif_neg_x(self):
-        if re.match(r"[0-9]+(\.)*[0-9]*", self.x)
+        if re.match("^[0-9]+(\.)*[0-9]*", self.first):
             return True
         return False

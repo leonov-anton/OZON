@@ -14,9 +14,11 @@ class CalculatorTesting(unittest.TestCase):
 
 
 
-    def add_test(self):
+    def input_number_test(self):
+
         """
-        Addition func test
-        :return:
+        Input number testing
+
         """
+
 
