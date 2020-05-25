@@ -8,7 +8,7 @@ class Calculator:
     
     """
 
-    def __init__(self, first, second):
+    def __init__(self, first=1, second=1):
 
         self.first = first
         self.second = second
@@ -20,6 +20,8 @@ class Calculator:
             json.dump(f"{float(self.first)} + {float(self.second)} = "
                       f"{float(self.first) + float(self.second)}", file)
             file.close()
+        else:
+            print("Я могу складывать только числа")
 
     def difference(self):
         """Difference x-y"""
@@ -28,6 +30,8 @@ class Calculator:
             json.dump(f"{float(self.first)} - {float(self.second)} = "
                       f"{float(self.first) - float(self.second)}", file)
             file.close()
+        else:
+            print("Я могу складывать только числа")
 
     def multiplication(self):
         """Multiplication x*y"""
@@ -36,27 +40,31 @@ class Calculator:
             json.dump(f"{float(self.first)} * {float(self.second)} = "
                       f"{float(self.first) * float(self.second)}", file)
             file.close()
+        else:
+            print("Я могу складывать только числа")
 
     def division(self):
         """Division x/y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
-        if self.verif_numb(self.first) and self.verif_numb(self.second) and float(self.second) != 0:
-            json.dump(f"{float(self.first)} / {float(self.second)} = "
-                      f"{float(self.first) / float(self.second)}", file)
-            file.close()
-        else:
-            print("На ноль делить нельзя")
+        try:
+            if self.verif_numb(self.first) and self.verif_numb(self.second):
+                json.dump(f"{float(self.first)} / {float(self.second)} = "
+                          f"{float(self.first) / float(self.second)}", file)
+                file.close()
+            else:
+                print("Я могу складывать только числа")
 
     def exponentiation(self):
         """Exponentiation x^y"""
-        # TODO negative degree
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             r = 1
             for i in range(int(self.second)):
                 r = r * float(self.first)
-            json.dump(f"{self.first} ^ {self.second} = {r}", file)
+            json.dump(f"{self.first} + {self.second} = {r}", file)
             file.close()
+        else:
+            print("Я могу складывать только числа")
 
     def square(self):
         """Square x. Calculate by Geron method."""
@@ -65,7 +73,7 @@ class Calculator:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
-            json.dump("Корень из " + self.first + " = " + str(r), file)
+            json.dump("Корень из " + str(self.first) + " = " + str(r), file)
             file.close()
         else:
             print("Я не умею брать корень отрицательного числа")
