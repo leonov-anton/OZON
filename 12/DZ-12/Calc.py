@@ -61,7 +61,7 @@ class Calculator:
     def square(self):
         """Square x. Calculate by Geron method."""
         file = open('operation_log.json', 'a', encoding='utf-8')
-        if self.verif_numb(self.first) and float(self.first) > 0:
+        if self.verif_numb(self.first) and float(self.first) >= 0:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
