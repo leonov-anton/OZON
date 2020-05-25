@@ -8,16 +8,18 @@ class CalcTesting(unittest.TestCase):
     """
 
     def setUp(self):
-        self.my_calculation = Calculator("1", "1")
+        x = str(1)
+        y = str(2)
+        self.my_calculation = Calculator(x, y)
 
-    def number_input_testing(self):
-        self.assertEqual(self.my_calculation.addition("1", "1"), 2)
-    #
-    # def text_input_testing(self):
-    #     self.assertFalse(self.my_calculation.verif_numb("sfsd"))
-    #
-    # def epmty_input_testing(self):
-    #     self.assertFalse(self.my_calculation.verif_numb(""))
+    def test_number_input_testing(self):
+        self.assertEqual(self.my_calculation.addition(), 3)
+
+    def test_text_input_testing(self):
+        self.assertFalse(self.my_calculation.verif_numb("sfsd"))
+
+    def test_epmty_input_testing(self):
+        self.assertTrue(self.my_calculation.verif_numb("2"))
 
 
 unittest.main()

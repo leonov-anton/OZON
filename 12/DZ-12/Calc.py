@@ -17,21 +17,21 @@ class Calculator:
         """Addition x+y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            # json.dump(f"{float(self.first)} + {float(self.second)} = "
-            #           f"{float(self.first) + float(self.second)}", file)
-            # file.close()
+            json.dump([f"{float(self.first)} + {float(self.second)} = "
+                      f"{float(self.first) + float(self.second)}"], file)
+            file.close()
             return float(self.first) + float(self.second)
         else:
             print("Я могу складывать только числа")
-
 
     def difference(self):
         """Difference x-y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump(f"{float(self.first)} - {float(self.second)} = "
-                      f"{float(self.first) - float(self.second)}", file)
+            json.dump([f"{float(self.first)} - {float(self.second)} = "
+                      f"{float(self.first) - float(self.second)}"], file)
             file.close()
+            return float(self.first) - float(self.second)
         else:
             print("Я могу вычитать только числа")
 
@@ -39,9 +39,10 @@ class Calculator:
         """Multiplication x*y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump(f"{float(self.first)} * {float(self.second)} = "
-                      f"{float(self.first) * float(self.second)}", file)
+            json.dump([f"{float(self.first)} * {float(self.second)} = "
+                      f"{float(self.first) * float(self.second)}"], file)
             file.close()
+            return float(self.first) * float(self.second)
         else:
             print("Я могу умножать только числа")
 
@@ -50,9 +51,10 @@ class Calculator:
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             try:
-                json.dump(f"{float(self.first)} / {float(self.second)} = "
-                        f"{float(self.first) / float(self.second)}", file)
+                json.dump([f"{float(self.first)} / {float(self.second)} = "
+                        f"{float(self.first) / float(self.second)}"], file)
                 file.close()
+                return float(self.first) / float(self.second)
             except ZeroDivisionError:
                 print("На ноль делать нельзя")
         else:
@@ -65,8 +67,9 @@ class Calculator:
             r = 1
             for i in range(int(self.second)):
                 r = r * float(self.first)
-            json.dump(f"{self.first} + {self.second} = {r}", file)
+            json.dump([f"{self.first} ^ {self.second} = {r}"], file)
             file.close()
+            return r
         else:
             print("Я могу возводить в степень только числа")
 
@@ -77,8 +80,9 @@ class Calculator:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
-            json.dump("Корень из " + str(self.first) + " = " + str(r), file)
+            json.dump(["Корень из " + str(self.first) + " = " + str(r)], file)
             file.close()
+            return r
         else:
             print("Я не умею брать корень отрицательного числа")
 
@@ -87,3 +91,8 @@ class Calculator:
         if re.match(r"^(-)*[0-9]+(\.)*[0-9]*", number):
             return True
         return False
+
+    def last(self):
+        file = open('operation_log.json')
+        username = json.loads(file)
+        print(username)

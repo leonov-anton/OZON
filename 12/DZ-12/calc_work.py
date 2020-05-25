@@ -5,5 +5,4 @@ y = input("Введите второе число (y): ")
 
 n = Calculator(x, y)
 
-print(n.addition())
-
+n.addition()
