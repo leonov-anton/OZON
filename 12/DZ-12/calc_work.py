@@ -5,5 +5,5 @@ y = input("Введите второе число (y): ")
 
 n = Calculator(x, y)
 
-n.division()
+n.addition()
 
