@@ -15,52 +15,58 @@ class Calculator:
 
     def addition(self):
         """Addition x+y"""
-        f = open('operation_log.json', 'a', encoding='utf-8')
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
                 json.dump(f"{float(self.first)} + {float(self.second)} = "
-                          f"{float(self.first) + float(self.second)}", f)
+                          f"{float(self.first) + float(self.second)}", file)
+                file.close()
 
     def difference(self):
         """Difference x-y"""
-        f = open('operation_log.json', 'a', encoding='utf-8')
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             json.dump(f"{float(self.first)} - {float(self.second)} = "
-                      f"{float(self.first) - float(self.second)}", f)
+                      f"{float(self.first) - float(self.second)}", file)
+            file.close()
 
     def multiplication(self):
         """Multiplication x*y"""
-        f = open('operation_log.json', 'a', encoding='utf-8')
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             json.dump(f"{float(self.first)} * {float(self.second)} = "
-                      f"{float(self.first) * float(self.second)}", f)
+                      f"{float(self.first) * float(self.second)}", file)
+            file.close()
 
     def division(self):
         """Division x/y"""
-        f = open('operation_log.json', 'a', encoding='utf-8')
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second) and float(self.second) != 0:
             json.dump(f"{float(self.first)} / {float(self.second)} = "
-                      f"{float(self.first) / float(self.second)}", f)
+                      f"{float(self.first) / float(self.second)}", file)
+            file.close()
         else:
             print("На ноль делить нельзя")
 
     def exponentiation(self):
         """Exponentiation x^y"""
         # TODO negative degree
-        f = open('operation_log.json', 'a', encoding='utf-8')
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             r = 1
             for i in range(int(self.second)):
                 r = r * float(self.first)
-            json.dump(f"{self.first} ^ {self.second} = {r}", f)
+            json.dump(f"{self.first} ^ {self.second} = {r}", file)
+            file.close()
 
-    def squer(self):
-        """Squer x (calculate by Geron method)"""
-        f = open('operation_log.json', 'a', encoding='utf-8')
+    def square(self):
+        """Square x. Calculate by Geron method."""
+        file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and float(self.first) > 0:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
-            json.dump("Корень из " + self.first + " = " + str(r), f)
+            json.dump("Корень из " + self.first + " = " + str(r), file)
+            file.close()
         else:
             print("Я не умею брать корень отрицательного числа")
 
