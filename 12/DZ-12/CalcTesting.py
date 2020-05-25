@@ -13,7 +13,7 @@ class CalculatorTesting(unittest.TestCase):
         self.my_calculation = Calculator(x, y)
 
     def number_input_testing(self):
-        self.assertTrue(self.my_calculation.verif_numb(5))
+        self.assertEqual(self.my_calculation.addition(), 2)
 
     def text_input_testing(self):
         self.assertFalse(self.my_calculation.verif_numb("sfsd"))

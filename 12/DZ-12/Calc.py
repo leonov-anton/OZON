@@ -8,7 +8,7 @@ class Calculator:
     
     """
 
-    def __init__(self, first=1, second=1):
+    def __init__(self, first, second):
 
         self.first = first
         self.second = second
@@ -31,7 +31,7 @@ class Calculator:
                       f"{float(self.first) - float(self.second)}", file)
             file.close()
         else:
-            print("Я могу складывать только числа")
+            print("Я могу вычитать только числа")
 
     def multiplication(self):
         """Multiplication x*y"""
@@ -41,18 +41,20 @@ class Calculator:
                       f"{float(self.first) * float(self.second)}", file)
             file.close()
         else:
-            print("Я могу складывать только числа")
+            print("Я могу умножать только числа")
 
     def division(self):
         """Division x/y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
-        try:
-            if self.verif_numb(self.first) and self.verif_numb(self.second):
+        if self.verif_numb(self.first) and self.verif_numb(self.second):
+            try:
                 json.dump(f"{float(self.first)} / {float(self.second)} = "
-                          f"{float(self.first) / float(self.second)}", file)
+                        f"{float(self.first) / float(self.second)}", file)
                 file.close()
-            else:
-                print("Я могу складывать только числа")
+            except ZeroDivisionError:
+                print("На ноль делать нельзя")
+        else:
+            print("Я могу делить только числа")
 
     def exponentiation(self):
         """Exponentiation x^y"""
@@ -64,7 +66,7 @@ class Calculator:
             json.dump(f"{self.first} + {self.second} = {r}", file)
             file.close()
         else:
-            print("Я могу складывать только числа")
+            print("Я могу возводить в степень только числа")
 
     def square(self):
         """Square x. Calculate by Geron method."""
