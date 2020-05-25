@@ -1,19 +1,22 @@
 import unittest
 from Calc import Calculator
 
+
 class CalculatorTesting(unittest.TestCase):
     """
-    Tests for Calculetor
+    Tests for Calculator
     """
 
+    def number_input_testing(self):
+        x = Calculator.verif_numb('5')
+        self.assertEqual(x, True)
 
-    def input_number_test(self):
+    def text_input_testing(self):
+        x = Calculator.verif_numb('safdsf')
+        self.assertFalse(x)
 
-        """
-        Input number testing
-
-        """
-        myNumbers = Calculator('9', '+', '9')
-        self.assert(myNumbers, '10')
+    def epmty_input_testing(self):
+        x = Calculator.verif_numb('')
+        self.assertFalse(x)
 
 unittest.main()

@@ -9,4 +9,4 @@ else:
 
 work = Calculator(x, oper, y)
 
-print(work.count())
+work.count()

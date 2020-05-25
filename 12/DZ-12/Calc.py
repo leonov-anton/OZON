@@ -1,20 +1,18 @@
 import re
 import json
 
-class Calculator:
 
+class Calculator:
     """
     Сalculator of simple math functions
     
     """
-
 
     def __init__(self, first, oper, second):
 
         self.first = first
         self.operation = oper
         self.second = second
-
 
     def count(self):
         f = open('operation_log.json', 'a', encoding='utf-8')
@@ -49,14 +47,7 @@ class Calculator:
         else:
             print("Значение X не число")
 
-
-    def verif_numb(self, numb):
-        if re.match("^(-)*[0-9]+(\.)*[0-9]*", numb):
+    def verif_numb(self, number):
+        if re.match("^(-)*[0-9]+(\.)*[0-9]*", number):
             return True
         return False
-
-
-    # def verif_neg_numb(self):
-    #     if re.match("^[0-9]+(\.)*[0-9]*", self.first):
-    #         return True
-    #     return False
