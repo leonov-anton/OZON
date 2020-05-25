@@ -24,6 +24,7 @@ class Calculator:
         else:
             print("Я могу складывать только числа")
 
+
     def difference(self):
         """Difference x-y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
