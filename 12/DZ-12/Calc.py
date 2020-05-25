@@ -17,9 +17,9 @@ class Calculator:
         """Addition x+y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-                json.dump(f"{float(self.first)} + {float(self.second)} = "
-                          f"{float(self.first) + float(self.second)}", file)
-                file.close()
+            json.dump(f"{float(self.first)} + {float(self.second)} = "
+                      f"{float(self.first) + float(self.second)}", file)
+            file.close()
 
     def difference(self):
         """Difference x-y"""
@@ -72,6 +72,6 @@ class Calculator:
 
     def verif_numb(self, number):
         """Verification value as s number"""
-        if re.match("^(-)*[0-9]+(\.)*[0-9]*", number):
+        if re.match(r"^(-)*[0-9]+(\.)*[0-9]*", number):
             return True
         return False
