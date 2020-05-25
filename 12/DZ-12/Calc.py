@@ -45,6 +45,7 @@ class Calculator:
 
     def exponentiation(self):
         """Exponentiation x^y"""
+        # TODO negative degree
         f = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             r = 1
@@ -64,6 +65,7 @@ class Calculator:
             print("Я не умею брать корень отрицательного числа")
 
     def verif_numb(self, number):
+        """Verification value as s number"""
         if re.match("^(-)*[0-9]+(\.)*[0-9]*", number):
             return True
         return False
