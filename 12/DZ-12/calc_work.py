@@ -1,12 +1,6 @@
 from Calc import Calculator
 
 x = input("Введите первое число (X): ")
-oper = input("Введите знак операции (+, -, *, /, ^, кор): ")
-if oper != "кор":
-    y = input("Введите второе число (Y): ")
-else:
-    y = str(1)
+y = input("Введите второе число (Y): ")
 
-work = Calculator(x, oper, y)
-
-work.count()
+numbers = Calculator(x, y)

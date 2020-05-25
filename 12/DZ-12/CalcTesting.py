@@ -8,15 +8,15 @@ class CalculatorTesting(unittest.TestCase):
     """
 
     def number_input_testing(self):
-        x = Calculator.verif_numb('5')
-        self.assertEqual(x, True)
+        self.x = Calculator.verif_numb('5')
+        self.assertEqual(self.x, True)
 
     def text_input_testing(self):
-        x = Calculator.verif_numb('safdsf')
-        self.assertFalse(x)
+        self.x = Calculator.verif_numb('safdsf')
+        self.assertFalse(self.x)
 
     def epmty_input_testing(self):
-        x = Calculator.verif_numb('')
-        self.assertFalse(x)
+        self.x = Calculator.verif_numb('')
+        self.assertFalse(self.x)
 
 unittest.main()
