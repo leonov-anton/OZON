@@ -17,9 +17,10 @@ class Calculator:
         """Addition x+y"""
         file = open('operation_log.json', 'a', encoding='utf-8')
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump(f"{float(self.first)} + {float(self.second)} = "
-                      f"{float(self.first) + float(self.second)}", file)
-            file.close()
+            # json.dump(f"{float(self.first)} + {float(self.second)} = "
+            #           f"{float(self.first) + float(self.second)}", file)
+            # file.close()
+            return float(self.first) + float(self.second)
         else:
             print("Я могу складывать только числа")
 
