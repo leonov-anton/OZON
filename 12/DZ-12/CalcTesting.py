@@ -12,12 +12,12 @@ class CalcTesting(unittest.TestCase):
 
     def number_input_testing(self):
         self.assertEqual(self.my_calculation.addition("1", "1"), 2)
-
-    def text_input_testing(self):
-        self.assertFalse(self.my_calculation.verif_numb("sfsd"))
-
-    def epmty_input_testing(self):
-        self.assertFalse(self.my_calculation.verif_numb(""))
+    #
+    # def text_input_testing(self):
+    #     self.assertFalse(self.my_calculation.verif_numb("sfsd"))
+    #
+    # def epmty_input_testing(self):
+    #     self.assertFalse(self.my_calculation.verif_numb(""))
 
 
 unittest.main()
