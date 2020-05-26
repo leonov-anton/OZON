@@ -5,7 +5,11 @@ import json
 class Calculator:
     """
     Сalculator of simple math functions
-    
+
+    Methods 'add', 'dif', 'mult', 'div', 'exp', 'square' returns resolt of calculation
+    and also save dicts to log file (json format).
+    Key dist - operation, value dict - result (float).
+
     """
 
     def __init__(self, first, second):
@@ -13,46 +17,53 @@ class Calculator:
         self.first = first
         self.second = second
 
-    def addition(self):
+    def add(self):
         """Addition x+y"""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
+        # метод log_load возвращает список, но метод списков append для функции не работает,
+        # можно ли не присваивать методу переменную а как-то напрямую обращаться к списку по имени метода?
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump([f"{float(self.first)} + {float(self.second)} = "
-                      f"{float(self.first) + float(self.second)}"], file)
+            log.append({f"{float(self.first)} + {float(self.second)}":
+                           float(self.first) + float(self.second)})
+            file = open('operation_log.json', 'w')
+            json.dump(log, file, indent=1, separators=',:')
             file.close()
             return float(self.first) + float(self.second)
         else:
             print("Я могу складывать только числа")
 
-    def difference(self):
+    def dif(self):
         """Difference x-y"""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump([f"{float(self.first)} - {float(self.second)} = "
-                      f"{float(self.first) - float(self.second)}"], file)
+            log.append({f"{float(self.first)} - {float(self.second)}":
+                           float(self.first) - float(self.second)})
+            json.dump(log, file, indent=1, separators=',:')
             file.close()
             return float(self.first) - float(self.second)
         else:
             print("Я могу вычитать только числа")
 
-    def multiplication(self):
+    def mult(self):
         """Multiplication x*y"""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
         if self.verif_numb(self.first) and self.verif_numb(self.second):
-            json.dump([f"{float(self.first)} * {float(self.second)} = "
-                      f"{float(self.first) * float(self.second)}"], file)
+            log.append({f"{float(self.first)} * {float(self.second)}":
+                           float(self.first) * float(self.second)})
+            json.dump(log, file, indent=1, separators=',:')
             file.close()
             return float(self.first) * float(self.second)
         else:
             print("Я могу умножать только числа")
 
-    def division(self):
+    def div(self):
         """Division x/y"""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             try:
-                json.dump([f"{float(self.first)} / {float(self.second)} = "
-                        f"{float(self.first) / float(self.second)}"], file)
+                log.append({f"{float(self.first)} / {float(self.second)}":
+                               float(self.first) / float(self.second)})
+                json.dump(log, file, indent=1, separators=',:')
                 file.close()
                 return float(self.first) / float(self.second)
             except ZeroDivisionError:
@@ -60,14 +71,15 @@ class Calculator:
         else:
             print("Я могу делить только числа")
 
-    def exponentiation(self):
+    def exp(self):
         """Exponentiation x^y"""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             r = 1
             for i in range(int(self.second)):
                 r = r * float(self.first)
-            json.dump([f"{self.first} ^ {self.second} = {r}"], file)
+            log.append({f"{self.first} ^ {self.second}": r})
+            json.dump(log, file, indent=1, separators=',:')
             file.close()
             return r
         else:
@@ -75,12 +87,13 @@ class Calculator:
 
     def square(self):
         """Square x. Calculate by Geron method."""
-        file = open('operation_log.json', 'a', encoding='utf-8')
+        log = self.log_load()
         if self.verif_numb(self.first) and float(self.first) >= 0:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
-            json.dump(["Корень из " + str(self.first) + " = " + str(r)], file)
+            log.append({"sguare " + str(self.first): r})
+            json.dump(log, file, indent=1, separators=',:')
             file.close()
             return r
         else:
@@ -93,6 +106,26 @@ class Calculator:
         return False
 
     def last(self):
-        file = open('operation_log.json')
-        username = json.loads(file)
-        print(username)
+        """Return last calculation as dist:
+        key - operation, value - result"""
+        file = open("operation_log.json")
+        log = json.load(file)
+        return log[-1]
+
+    def log_load(self):
+        """ Loading Log file"""
+        # не получается загрузить пустой json файл, данный метод либо добавлять пустой список в
+        # json файл, если список уже был то загружает. Или можно по другому?
+        try:
+            file = open("operation_log.json")
+            log = json.load(file)
+            file.close()
+            return log
+        except json.decoder.JSONDecodeError:
+            list = []
+            file = open("operation_log.json", 'w')
+            log = json.dump(list, file)
+            file.close()
+            log = json.load(file)
+            file.close()
+            return log
