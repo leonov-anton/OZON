@@ -38,6 +38,7 @@ class Calculator:
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             log.append({f"{float(self.first)} - {float(self.second)}":
                            float(self.first) - float(self.second)})
+            file = open('operation_log.json', 'w')
             json.dump(log, file, indent=1, separators=',:')
             file.close()
             return float(self.first) - float(self.second)
@@ -50,6 +51,7 @@ class Calculator:
         if self.verif_numb(self.first) and self.verif_numb(self.second):
             log.append({f"{float(self.first)} * {float(self.second)}":
                            float(self.first) * float(self.second)})
+            file = open('operation_log.json', 'w')
             json.dump(log, file, indent=1, separators=',:')
             file.close()
             return float(self.first) * float(self.second)
@@ -63,6 +65,7 @@ class Calculator:
             try:
                 log.append({f"{float(self.first)} / {float(self.second)}":
                                float(self.first) / float(self.second)})
+                file = open('operation_log.json', 'w')
                 json.dump(log, file, indent=1, separators=',:')
                 file.close()
                 return float(self.first) / float(self.second)
@@ -78,6 +81,7 @@ class Calculator:
             r = 1
             for i in range(int(self.second)):
                 r = r * float(self.first)
+            file = open('operation_log.json', 'w')
             log.append({f"{self.first} ^ {self.second}": r})
             json.dump(log, file, indent=1, separators=',:')
             file.close()
@@ -92,6 +96,7 @@ class Calculator:
             r = 1
             for i in range(10):
                 r = (r + (float(self.first) / r)) / 2
+            file = open('operation_log.json', 'w')
             log.append({"sguare " + str(self.first): r})
             json.dump(log, file, indent=1, separators=',:')
             file.close()
