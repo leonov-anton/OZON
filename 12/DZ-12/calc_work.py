@@ -5,3 +5,4 @@ y = input("Введите второе число (y): ")
 
 n = Calculator(x, y)
 
+n.mult()

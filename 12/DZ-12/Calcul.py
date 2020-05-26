@@ -26,7 +26,7 @@ class Calculator:
             log.append({f"{float(self.first)} + {float(self.second)}":
                            float(self.first) + float(self.second)})
             file = open('operation_log.json', 'w')
-            json.dump(log, file, indent=1, separators=',:')
+            json.dump(log, file, indent=1, separators=', ')
             file.close()
             return float(self.first) + float(self.second)
         else:
