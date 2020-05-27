@@ -5,7 +5,7 @@ def palindrome(s):
     spisok = list(c.lower())
     first_part = spisok[:kol_symb]
     second_part = spisok[kol_symb + len(c) % 2:]
-    second_part = second_part[::-1] #не получается развернуть методом .reverse()
+    second_part.reverse() #не получается развернуть методом .reverse()
     if first_part == second_part:
         a = "Полиндром"
     else:
