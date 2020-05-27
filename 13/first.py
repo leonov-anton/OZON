@@ -14,7 +14,7 @@ window = QWidget()
 window.setGeometry(100, 100, 100, 100)
 window.move(60, 15)
 msg = QLabel('<h1>Hello!</h1>', parent=window)
-msq.move(60, 15)
+msg.move(60, 15)
 
 window.move(60, 50)
 ok_button = QPushButton("OK", parent=window)
