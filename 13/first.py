@@ -22,3 +22,4 @@ ok_button.move(60, 50)
 
 window.show()
 sys.exit(app.exec())
+
