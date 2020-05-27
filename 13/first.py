@@ -11,7 +11,7 @@ app = QApplication(sys.argv)
 # Создание окна
 window = QWidget()
 
-window.setGeometry(100, 100, 100, 100)
+window.setGeometry(100, 100, 200, 100)
 window.move(60, 15)
 msg = QLabel('<h1>Hello!</h1>', parent=window)
 msg.move(60, 15)

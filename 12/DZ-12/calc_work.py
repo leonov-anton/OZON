@@ -1,8 +1,7 @@
-from Calcul import Calculator
+from Calc import Calculator
 
-x = input("Введите первое число (x): ")
-y = input("Введите второе число (y): ")
+x = input("Введите первое число (X): ")
+y = input("Введите второе число (Y): ")
 
-n = Calculator(x, y)
+numbers = Calculator(x, y)
 
-n.mult()
