@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtWidgets import QWidget
 from PyQt5.QtWidgets import QInputDialog
 
-class exzmple(QWidget):
+class exemple(QWidget):
 
     def __init__(self):
         super().__init__()
@@ -19,7 +19,7 @@ class exzmple(QWidget):
         self.btn = QPushButton("Dialog", self)
         self.btn.clicked.connect(self.showDialog)
 
-        self.le = QLabel("", self)
+        self.le = QLabel("Something", self)
         self.le.move(50, 50)
         self.le.setFixedHeight(300)
         self.le.setFixedWidth(200)
@@ -36,5 +36,5 @@ class exzmple(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    ex = exzmple()
+    ex = exemple()
     sys.exit(app.exec_())

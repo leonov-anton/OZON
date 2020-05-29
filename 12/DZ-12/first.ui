@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>273</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>241</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="numb_buttons">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="push_Button_1">
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="push_Button_2">
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="push_Button_qw">
+      <property name="text">
+       <string>,</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="push_Button_8">
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="push_Button_0">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="push_Button_5">
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="push_Button_3">
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="push_Button_7">
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="push_Button_4">
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="push_Button_6">
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="push_Button_9">
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="push_Button_neg">
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>60</y>
+     <width>81</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="operation_buttons">
+    <item>
+     <widget class="QPushButton" name="push_plus_Button">
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_min_Button">
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_mult_Button">
+      <property name="text">
+       <string>*</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_div_Button">
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_exp_Button">
+      <property name="text">
+       <string>^</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_square_Button">
+      <property name="text">
+       <string>square</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="push_get_resolt">
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>push_Button_5</tabstop>
+  <tabstop>push_Button_7</tabstop>
+  <tabstop>push_Button_6</tabstop>
+  <tabstop>push_Button_1</tabstop>
+  <tabstop>push_Button_9</tabstop>
+  <tabstop>push_Button_4</tabstop>
+  <tabstop>push_Button_3</tabstop>
+  <tabstop>push_Button_2</tabstop>
+  <tabstop>push_Button_8</tabstop>
+  <tabstop>push_Button_qw</tabstop>
+  <tabstop>push_Button_neg</tabstop>
+  <tabstop>push_plus_Button</tabstop>
+  <tabstop>push_min_Button</tabstop>
+  <tabstop>push_mult_Button</tabstop>
+  <tabstop>push_div_Button</tabstop>
+  <tabstop>push_exp_Button</tabstop>
+  <tabstop>push_square_Button</tabstop>
+  <tabstop>push_get_resolt</tabstop>
+  <tabstop>push_Button_0</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
