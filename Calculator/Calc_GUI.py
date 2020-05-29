@@ -1,5 +1,5 @@
 import sys
-from Calcul import Calculator
+# from Calcul import Calculator
 from calculpyqt import *
 
 class myCalc(QtWidgets.QMainWindow):
@@ -18,21 +18,21 @@ class myCalc(QtWidgets.QMainWindow):
         self.show()
 
     def add(self):
-        # x = self.ui.lineEdit.text()
-        # y = self.ui.lineEdit2.text()
-        # z = int(x) + int(y)
-        self.ui.label.setText()
+        n1 = self.ui.lineEdit.text()
+        n2 = self.ui.lineEdit2.text()
+        resolt = float(n1) + float(n2)
+        self.ui.label.setText(str(resolt))
 
     def dif(self):
         # x = int(self.ui.lineEdit.text())
         # y = int(self.ui.lineEdit2.text())
         # z = x * y
-        self.ui.label.setText()
+        self.ui.label.setText("dif")
 
     def mult(self):
         # x = int(self.ui.lineEdit.text())
         # y = int(self.ui.lineEdit2.text())
-        # z = x * y
+        # z = x - y
         self.ui.label.setText("milt")
 
     def div(self):
@@ -55,6 +55,6 @@ class myCalc(QtWidgets.QMainWindow):
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
-    myapp = myCalc()
+    ex = myCalc()
     sys.exit(app.exec_())
 
