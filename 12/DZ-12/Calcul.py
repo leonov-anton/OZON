@@ -106,7 +106,7 @@ class Calculator:
 
     def verif_numb(self, number):
         """Verification value as s number"""
-        if re.match(r"^(-)*[0-9]+(\.)*[0-9]*", number):
+        if re.fullmatch(r"^(-)?[0-9]+(\.)?[0-9]*", number):
             return True
         return False
 
