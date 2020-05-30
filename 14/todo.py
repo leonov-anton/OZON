@@ -42,6 +42,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.ui.deleteButton.pressed.connect(self.delete)
         self.ui.completeButton.pressed.connect(self.complete)
 
+
     def add(self):
         text = self.ui.todoEdit.text()
         if text:
