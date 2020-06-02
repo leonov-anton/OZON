@@ -6,12 +6,63 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>429</width>
-    <height>473</height>
+    <width>408</width>
+    <height>547</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>408</width>
+    <height>547</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>408</width>
+    <height>547</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Todo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QPushButton { 
+		background-color: #A0A0A0; 
+		border:1px solid #575757; 
+		border-radius: 5px;
+		color: #232324;
+		font-size: 12px;
+		padding: 3px;
+		font-weight: bold;
+
+}
+ QPushButton:pressed {
+    	 background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #8A8A8A, stop: 1 #E0E0E0);
+ }
+
+ QPushButton:flat {
+
+ }
+
+ QPushButton:default {
+   		border-color: #575757;
+ }
+ QLineEdit { 
+		background-color: #E0E0E0; 
+		border: 1px solid #8f8f91; 
+		border-radius: 5px;
+		padding: 2px;
+}
+QListView {
+ 		background-color: #E0E0E0;
+		border: 1px solid #8f8f91; 
+		border-radius: 10px;
+}
+QMainWindow{
+ 		background-color: #AEAEAE;
+ 
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -24,6 +75,9 @@
     </item>
     <item>
      <widget class="QWidget" name="widget" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QPushButton" name="deleteButton">
@@ -34,6 +88,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="completeButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="text">
           <string>Complete</string>
          </property>
