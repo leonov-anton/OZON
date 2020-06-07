@@ -26,7 +26,7 @@ class Calculator:
             log.append({f"{float(self.first)} + {float(self.second)}":
                            float(self.first) + float(self.second)})
             file = open('operation_log.json', 'w')
-            json.dump(log, file, indent=1, separators=', ')
+            json.dump(log, file, indent=1, separators=', :')
             file.close()
             return float(self.first) + float(self.second)
         else:
@@ -52,7 +52,7 @@ class Calculator:
             log.append({f"{float(self.first)} * {float(self.second)}":
                            float(self.first) * float(self.second)})
             file = open('operation_log.json', 'w')
-            json.dump(log, file, indent=1, separators=',:')
+            json.dump(log, file, indent=1, separators=', :')
             file.close()
             return float(self.first) * float(self.second)
         else:
@@ -66,7 +66,7 @@ class Calculator:
                 log.append({f"{float(self.first)} / {float(self.second)}":
                                float(self.first) / float(self.second)})
                 file = open('operation_log.json', 'w')
-                json.dump(log, file, indent=1, separators=',:')
+                json.dump(log, file, indent=1, separators=', :')
                 file.close()
                 return float(self.first) / float(self.second)
             except ZeroDivisionError:
@@ -83,7 +83,7 @@ class Calculator:
                 r = r * float(self.first)
             file = open('operation_log.json', 'w')
             log.append({f"{self.first} ^ {self.second}": r})
-            json.dump(log, file, indent=1, separators=',:')
+            json.dump(log, file, indent=1, separators=', :')
             file.close()
             return r
         else:
@@ -98,7 +98,7 @@ class Calculator:
                 r = (r + (float(self.first) / r)) / 2
             file = open('operation_log.json', 'w')
             log.append({"sguare " + str(self.first): r})
-            json.dump(log, file, indent=1, separators=',:')
+            json.dump(log, file, indent=1, separators=', :')
             file.close()
             return r
         else:

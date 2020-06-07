@@ -33,42 +33,42 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+        # self.ui = Ui_MainWindow()
+        self.setupUi(self)
         self.model = TodoModel()
         self.load()
-        self.ui.todoView.setModel(self.model)
-        self.ui.addButton.pressed.connect(self.add)
-        self.ui.deleteButton.pressed.connect(self.delete)
-        self.ui.completeButton.pressed.connect(self.complete)
+        self.todoView.setModel(self.model)
+        self.addButton.pressed.connect(self.add)
+        self.deleteButton.pressed.connect(self.delete)
+        self.completeButton.pressed.connect(self.complete)
 
 
     def add(self):
-        text = self.ui.todoEdit.text()
+        text = self.todoEdit.text()
         if text:
             self.model.todos.append((False, text))
             self.model.layoutChanged.emit()
-            self.ui.todoEdit.setText("")
+            self.todoEdit.setText("")
             self.save()
 
     def delete(self):
-        indexes = self.ui.todoView.selectedIndexes()
+        indexes = self.todoView.selectedIndexes()
         if indexes:
             index = indexes[0]
             del self.model.todos[index.row()]
             self.model.layoutChanged.emit()
-            self.ui.todoView.clearSelection()
+            self.todoView.clearSelection()
             self.save()
 
     def complete(self):
-        indexes = self.ui.todoView.selectedIndexes()
+        indexes = self.todoView.selectedIndexes()
         if indexes:
             index = indexes[0]
             row = index.row()
             ststus, text = self.model.todos[row]
             self.model.todos[row] = (True, text)
             self.model.dataChanged.emit(index,index)
-            self.ui.todoView.clearSelection()
+            self.todoView.clearSelection()
             self.save()
 
     def save(self):
