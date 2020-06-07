@@ -4,22 +4,34 @@ from numpy import exp, array, random, dot
 def s_der(x):
     return x * (1-x)
 
-train_in = array([[0, 0], [1, 1], [0, 1], [1, 0]])
+
+train_in = array([[0, 1, 0], [1, 1, 1], [1, 0, 0], [0, 1, 1]])
+
 train_out = array([[0, 1, 0, 0]]).T
+
 random.seed(123)
-synpatic_waight = 2 * random.random((2, 1)) - 1
-# print(synpatic_waight)
-for i in range(1000):
-    out = 1 / (1 + exp(-(dot(train_in, synpatic_waight))))
-    error = train_out - out
-    change = dot(train_in.T, error * s_der(out))
-    synpatic_waight += change
+synpatic_waight_1 = 2 * random.random((3, 4)) - 1
+synpatic_waight_2 = 2 * random.random((4, 1)) - 1
 
-print(out)
-# print(error)
+for i in range(50000): # нужно большое количество эпох
 
-# print(f"Вес синопсиса - {synpatic_waight}")
+    out_1 = 1 / (1 + exp(-(dot(train_in, synpatic_waight_1)))) # выход первого слоя
+    out_2 = 1 / (1 + exp(-(dot(out_1, synpatic_waight_2)))) # выход второго слоя
 
-# print("Конъюнкция: ")
-#
-# print(1 / (1 + exp(-(dot(array([0, 1, 0, 1, 0]), synpatic_waight)))))
+    error_2 = train_out - out_2 # ошибка на выходе
+    change_2 = dot(out_1.T, error_2 * s_der(out_2)) # изменение веса выходных синапсисов на данной итерации
+
+    error_1 = dot(change_2, synpatic_waight_2.T) # ошибка между первым и вторым слоем
+    change_1 = dot(train_in.T, error_1 * s_der(out_2)) # изменение веса синапсисов между 1и 2 слоем на данной итерации
+
+    synpatic_waight_1 += change_1
+    synpatic_waight_2 += change_2
+
+print(out_2)
+print(synpatic_waight_1)
+print(synpatic_waight_2)
+
+out_3 = 1 / (1 + exp(-(dot(array([[0, 0, 1]]), synpatic_waight_1)))) # выход первого слоя
+out_4 = 1 / (1 + exp(-(dot(out_3, synpatic_waight_2)))) # выход второго слоя
+
+print(out_4)
