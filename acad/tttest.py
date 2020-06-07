@@ -1,53 +1,36 @@
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-# date: 13.02.12
-import pprint
-
-from pyautocad import Autocad, utils
+from pyautocad import Autocad, APoint, distance
+import json
 
 
-def print_table_info(table, print_rows=0):
-    merged = set()
-    column_widths = [round(table.GetColumnWidth(col), 2) for col in range(table.Columns)]
-    row_heights = [round(table.GetRowHeight(row), 2) for row in range(table.Rows)]
-    row_texts = []
-    for row in range(table.Rows):
-        columns = []
-        for col in range(table.Columns):
-            if print_rows > 0:
-                columns.append(table.GetText(row, col))
-            minRow, maxRow, minCol, maxCol, is_merged = table.IsMergedCell(row, col)
-            if is_merged:
-                merged.add((minRow, maxRow, minCol, maxCol,))
-        if print_rows > 0:
-            print_rows -= 1
-            row_texts.append(columns)
+acad = Autocad()
 
-    print
-    'row_heights = %s' % str(row_heights)
-    print
-    'column_widths = %s' % str(column_widths)
-    print
-    'merged_cells = %s' % pprint.pformat(list(merged))
-    if row_texts:
-        print
-        'content = ['
-        for row in row_texts:
-            print
-            u"        [%s]," % u", ".join("u'%s'" % s for s in row)
-        print
-        ']'
+# db_circle = []
+# n = 0
+# for obj in acad.iter_objects('Circle'):
+#     file = open('obj_cirlces.json', 'w')
+#     db_circle.append({'Number': n, 'Centre': obj.Center, 'Layer': obj.Layer, 'ObjectName': obj.ObjectName})
+#     n += 1
+#     json.dump(db_circle, file, indent=1)
+#     file.close()
 
+db_lines = []
+m = 0
+for obj in acad.iter_objects('Line'):
+    file = open('obj_lines.json', 'w')
+    db_lines.append({'Number': m, 'ObjectName': obj.ObjectName, 'ObjectID': obj.ObjectID,
+                     'Handle': obj.Handle, 'Length': obj.Length, 'Layer': obj.Layer})
+    m += 1
+    json.dump(db_lines, file, indent=1)
+    file.close()
 
-def main():
-    acad = Autocad()
-    # layout = acad.model
-    table = acad.find_one('Table')
-    if not table:
-        return
-    print_table_info(table, 3)
+pp = APoint(2210581.291, 488153.2095)
+acad.model.AddTable(pp, len(db_lines) + 4, 10, 8, 45)
 
+k = 0
+for table in acad.iter_objects('Table'):
+    table.SetText(3, 6, 'Длина, м')
+    for line in acad.iter_objects('Polyline'):
+        k += 1
+        table.SetText(3 + k, 6, str("=" + "%<\AcObjProp Object(%<\_ObjId " +
+                                    str(line.ObjectID) + ">%).Length>%" + "*1.2" + "+5"))
 
-if __name__ == '__main__':
-    with utils.timing():
-        main()

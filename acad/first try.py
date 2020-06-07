@@ -5,8 +5,8 @@ acad = Autocad()
 # acad.prompt("Hello, Autocad from Python\n")
 # print(acad.doc.Name)
 
-p1 = APoint(0, 0)
-p2 = APoint(50, 25)
+# p1 = APoint(0, 0)
+# p2 = APoint(50, 25)
 # # acad.model.AddMText(p1, 2.5, "Hello, World!")
 #
 # for i in range(5):
@@ -25,9 +25,9 @@ p2 = APoint(50, 25)
 #
 points = []
 for obj in acad.iter_objects('Circle'):
-    if obj.Layer == 'KG':
+    if obj.Layer == 'СИП С1-85 пром':
         points.append(obj.Center)
-        print(len(points))
+print(points)
 
     # print(obj.Layer)
 #     points.append(obj.Name)
