@@ -18,4 +18,4 @@ for i in range(10000):
 print(out)
 print(change)
 
-print(1 / (1 + exp(-(dot(array([[1, 1, 0]]), synpatic_waight)))))
+print(1 / (1 + exp(-(dot(array([1, 1, 0]), synpatic_waight)))))

@@ -13,6 +13,7 @@ def neuro(epoch, rate, accur):
         err = centimetre - (inches*W_coef)
         if abs(err) < accur:
             print(f"Итог - {W_coef}")
+            return
         elif err > 0:
             W_coef += rate
         else:
