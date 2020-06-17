@@ -79,11 +79,11 @@ class neuralNetwork:
 
 
 in_nodes = 784
-hiden_nodes_1 = 300
-hiden_nodes_2 = 100
+hiden_nodes_1 = 500
+hiden_nodes_2 = 200
 out_nodes = 26
 
-learning_rate = 0.05
+learning_rate = 0.03
 
 n = neuralNetwork(in_nodes, hiden_nodes_1, hiden_nodes_2, out_nodes, learning_rate)
 

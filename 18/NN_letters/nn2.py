@@ -86,6 +86,7 @@ class neuralNetwork:
         # sets.append({"hiden_nodes": hiden_nodes})
         # sets.append({"learning_rate": learning_rate})
         json.dump(sets, file, indent=1, separators=',:')
+        file.close()
         return
 
 
