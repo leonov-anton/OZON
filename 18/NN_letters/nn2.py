@@ -109,30 +109,31 @@ start_time = time.time()
 
 # Тренировка
 
-for line in training_list:
-    value = line.split(',')
-    inputs = (numpy.asfarray(value[1:]) / 255.0 * 0.99) + 0.01
-    target = numpy.zeros(out_nodes) + 0.01
-    target[int(value[0]) - 1] = 0.99
-    n.train(inputs, target)
-    # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 10, cval=0.1, order=1,
-    #                                                      reshape=False)  #поворот по часовой
-    # n.train(input_plusx_img.reshape(784), target)
-    # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 45, cval=0.1, order=1,
-    #                                                      reshape=False)  # поворот по часовой
-    # n.train(input_plusx_img.reshape(784), target)
-    # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 90, cval=0.1, order=1,
-    #                                                      reshape=False)  # поворот по часовой
-    # n.train(input_plusx_img.reshape(784), target)
-    # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -30, cval=0.1, order=1,
-    #                                                       reshape=False)  #поворот против часовой
-    # n.train(input_minusx_img.reshape(784), target)
-    # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -90, cval=0.1, order=1,
-    #                                                       reshape=False)  # поворот против часовой
-    # n.train(input_minusx_img.reshape(784), target)
-    # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -135, cval=0.1, order=1,
-    #                                                       reshape=False)  # поворот против часовой
-    # n.train(input_minusx_img.reshape(784), target)
+for i in range(6):
+    for line in training_list:
+        value = line.split(',')
+        inputs = (numpy.asfarray(value[1:]) / 255.0 * 0.99) + 0.01
+        target = numpy.zeros(out_nodes) + 0.01
+        target[int(value[0]) - 1] = 0.99
+        n.train(inputs, target)
+        # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 10, cval=0.1, order=1,
+        #                                                      reshape=False)  #поворот по часовой
+        # n.train(input_plusx_img.reshape(784), target)
+        # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 45, cval=0.1, order=1,
+        #                                                      reshape=False)  # поворот по часовой
+        # n.train(input_plusx_img.reshape(784), target)
+        # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 90, cval=0.1, order=1,
+        #                                                      reshape=False)  # поворот по часовой
+        # n.train(input_plusx_img.reshape(784), target)
+        # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -10, cval=0.1, order=1,
+        #                                                       reshape=False)  #поворот против часовой
+        # n.train(input_minusx_img.reshape(784), target)
+        # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -90, cval=0.1, order=1,
+        #                                                       reshape=False)  # поворот против часовой
+        # n.train(input_minusx_img.reshape(784), target)
+        # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -135, cval=0.1, order=1,
+        #                                                       reshape=False)  # поворот против часовой
+        # n.train(input_minusx_img.reshape(784), target)
 
 
 # all = test_data_list[5].split(',')

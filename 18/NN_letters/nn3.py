@@ -79,11 +79,11 @@ class neuralNetwork:
 
 
 in_nodes = 784
-hiden_nodes_1 = 500
-hiden_nodes_2 = 300
+hiden_nodes_1 = 300
+hiden_nodes_2 = 100
 out_nodes = 26
 
-learning_rate = 0.01
+learning_rate = 0.05
 
 n = neuralNetwork(in_nodes, hiden_nodes_1, hiden_nodes_2, out_nodes, learning_rate)
 
@@ -105,18 +105,18 @@ for line in training_list:
     target = numpy.zeros(out_nodes) + 0.01
     target[int(value[0]) - 1] = 0.99
     n.train(inputs, target)
-    # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 10, cval=0.1, order=1,
-    #                                                      reshape=False)  #поворот по часовой
-    # n.train(input_plusx_img.reshape(784), target)
+    input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 10, cval=0.1, order=1,
+                                                            reshape=False)  #поворот по часовой
+    n.train(input_plusx_img.reshape(784), target)
     # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 45, cval=0.1, order=1,
     #                                                      reshape=False)  # поворот по часовой
     # n.train(input_plusx_img.reshape(784), target)
     # input_plusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), 135, cval=0.1, order=1,
     #                                                      reshape=False)  # поворот по часовой
     # n.train(input_plusx_img.reshape(784), target)
-    # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -10, cval=0.1, order=1,
-    #                                                       reshape=False)  #поворот против часовой
-    # n.train(input_minusx_img.reshape(784), target)
+    input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -10, cval=0.1, order=1,
+                                                            reshape=False)  #поворот против часовой
+    n.train(input_minusx_img.reshape(784), target)
     # input_minusx_img = scipy.ndimage.interpolation.rotate(inputs.reshape(28, 28), -90, cval=0.1, order=1,
     #                                                       reshape=False)  # поворот против часовой
     # n.train(input_minusx_img.reshape(784), target)
