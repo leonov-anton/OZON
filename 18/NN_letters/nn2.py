@@ -15,10 +15,10 @@ class neuralNetwork:
         self.lr = learningrate
         self.w_i_h = numpy.random.normal(0.0, pow(self.hnodes, -0.5), (self.hnodes, self.inodes)) # веса связей входного и скрытого слоя
         self.w_h_o = numpy.random.normal(0.0, pow(self.onodes, -0.5), (self.onodes, self.hnodes))  # веса связей скрытого и выходного слоя
-        self.activation_func = lambda x: (scipy.special.expit(x))  # сигмойда
-        self.dev = lambda x:  (x * (1.0 - x))
-        # self.activation_func = lambda x: (numpy.tanh(x) + 1)/2  # тангенс
-        # self.dev = lambda x: (1 - (numpy.tanh(x) ** 2))/2  # производная тангенса
+        # self.activation_func = lambda x: (scipy.special.expit(x))  # сигмойда
+        # self.dev = lambda x:  (x * (1.0 - x))
+        self.activation_func = lambda x: (numpy.tanh(x) + 1)/2  # тангенс
+        self.dev = lambda x: (1 - (numpy.tanh(x) ** 2))/2  # производная тангенса
         self.inverse_act_func = lambda x: (scipy.special.logit(x))
         pass
 
@@ -35,8 +35,8 @@ class neuralNetwork:
         output_errors = targets - final_outputs
         hiden_errors = numpy.dot(self.w_h_o.T, output_errors)
 
-        self.w_h_o += self.lr * numpy.dot((output_errors * self.dev(final_outputs)), numpy.transpose(hiden_outputs))
-        self.w_i_h += self.lr * numpy.dot((hiden_errors * self.dev(hiden_outputs)), numpy.transpose(inputs))
+        self.w_h_o += self.lr * numpy.dot((output_errors * self.dev(final_inputs)), numpy.transpose(hiden_outputs))
+        self.w_i_h += self.lr * numpy.dot((hiden_errors * self.dev(hiden_inputs)), numpy.transpose(inputs))
 
         pass
 
@@ -91,7 +91,7 @@ class neuralNetwork:
 
 
 in_nodes = 784
-hiden_nodes = 300
+hiden_nodes = 1000
 out_nodes = 26
 
 learning_rate = 0.1
