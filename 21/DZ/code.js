@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    $('.shop').magnificPopup({delegate: 'a',
+    $('.photos').magnificPopup({delegate: 'a',
         type: 'image',
         gallery :{
             enabled: true
