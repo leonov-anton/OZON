@@ -10,10 +10,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-button_help = '/help'
+button_help = 'помощь'
 
 def start(update, context):
-    keybord = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=button_help)]], resize_keyboard=True,)
+    keybord = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=button_help)]])
     update.message.reply_text(text="Привет! Используй /set <seconds> чтобы утановить таймер или нажми на кнопку снизу",
                               reply_makrup=keybord)
 
