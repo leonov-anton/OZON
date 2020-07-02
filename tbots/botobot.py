@@ -12,10 +12,12 @@ logger = logging.getLogger(__name__)
 
 button_help = '/help'
 
+
 def start(update, context):
     keybord = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=button_help)]])
     update.message.reply_text(text="Привет! Используй /set <seconds> чтобы утановить таймер или нажми на кнопку снизу",
                               reply_makrup=keybord)
+
 
 def alarm(context):
     job = context.job
