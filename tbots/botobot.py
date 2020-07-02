@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-button_help = 'помощь'
+button_help = '/help'
 
 def start(update, context):
     keybord = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=button_help)]])
