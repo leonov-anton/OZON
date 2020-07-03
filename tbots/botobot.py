@@ -4,19 +4,16 @@ from telegram import ReplyKeyboardMarkup
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 
-
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
 
-button_help = '/help'
-
 
 def start(update, context):
-    keybord = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text=button_help)]])
-    update.message.reply_text(text="Привет! Используй /set <seconds> чтобы утановить таймер или нажми на кнопку снизу",
-                              reply_makrup=keybord)
+    btn = [[KeyboardButton("/help")]]
+    update.message.reply_text("Привет! Нажми на кнопку снизу чтобы узнать как я работую",
+                              reply_makrup=ReplyKeyboardMarkup(btn, one_time_keyboard=True))
 
 
 def alarm(context):
@@ -34,7 +31,7 @@ def set_timer(update, context):
 
         if 'timer' in context.chat_data:
             old_timer = context.chat_data['timer']
-            old_timer.shedule_removal()
+            old_timer.schedule_removal()
 
         new_timer = context.job_queue.run_once(alarm, due, context=chat_id)
         context.chat_data['timer'] = new_timer
@@ -50,9 +47,14 @@ def unset(update, context):
         update.message.reply_text("У вас нет активного таймера")
         return
     timer = context.chat_data['timer']
-    timer.shedule_removal()
+    timer.schedule_removal()
     del context.chat_data['timer']
     update.message.reply_text("Таймер удален")
+
+
+def help(update, context):
+    update.message.reply_text(text="Используй /set <seconds> чтобы утановить таймер.\n"
+                                   "/unset отключит сущесвующий таймер. \n")
 
 
 def error(update, context):
@@ -64,11 +66,15 @@ def main():
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("help", start))
+    dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("set", set_timer, pass_args=True, pass_job_queue=True, pass_chat_data=True))
     dp.add_handler(CommandHandler("unset", unset, pass_chat_data=True))
     dp.add_error_handler(error)
 
     updater.start_polling()
 
-main()
+    updater.idle()
+
+
+if __name__ == '__main__':
+    main()
