@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import time
 
 
-def cicle_list(n, m):  # добавить m
-    for i in range(2, m+1): # добавить m
+def cicle_list(n):  # добавить m
+    for i in range(2, 5): # добавить m
         a.append(n ** i)
     return a
 
 
-def list_hrec(n, m): # добавить m
-    return list_iter(2, m, n) # добавить m
+def list_hrec(n): # добавить m
+    return list_iter(2, 5, n) # добавить m
 
 
 def list_iter(iter, limit, n):
@@ -22,7 +22,7 @@ def list_iter(iter, limit, n):
 
 n = int(input("Введите число: "))
 t = time.time()
-m = int(input("Введите максимальную степень: "))
+# m = int(input("Введите максимальную степень: "))
 a = []
 b = []
 # t = time.time()
@@ -36,7 +36,7 @@ defs = [cicle_list, list_hrec]
 
 arguments = {}
 
-for i in range(1000):
+for i in range(100):
     arguments['i' + str(i)] = i
 
 argument_name = 'size of number'
