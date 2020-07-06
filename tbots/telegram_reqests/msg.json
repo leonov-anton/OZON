@@ -1,0 +1,26 @@
+{
+ "ok": true,
+ "result": [
+  {
+   "update_id": 218038951,
+   "message": {
+    "message_id": 554,
+    "from": {
+     "id": 195177538,
+     "is_bot": false,
+     "first_name": "Anton",
+     "username": "anton17890",
+     "language_code": "ru"
+    },
+    "chat": {
+     "id": 195177538,
+     "first_name": "Anton",
+     "username": "anton17890",
+     "type": "private"
+    },
+    "date": 1594026812,
+    "text": "3"
+   }
+  }
+ ]
+}

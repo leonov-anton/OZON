@@ -1,0 +1,42 @@
+{
+ "ok": true,
+ "result": [
+  {
+   "update_id": 218039045,
+   "message": {
+    "message_id": 714,
+    "from": {
+     "id": 195177538,
+     "is_bot": false,
+     "first_name": "Anton",
+     "username": "anton17890",
+     "language_code": "ru"
+    },
+    "chat": {
+     "id": 195177538,
+     "first_name": "Anton",
+     "username": "anton17890",
+     "type": "private"
+    },
+    "date": 1594030021,
+    "sticker": {
+     "width": 512,
+     "height": 512,
+     "emoji": "\ud83d\ude09",
+     "set_name": "mops_dyadya_pyos",
+     "is_animated": false,
+     "thumb": {
+      "file_id": "AAMCAgADGQEAAgLKXwL3xWL1mKXIymiFRBM5EmH80E4AAtIAA-zE7wTCqiVQezRJ2GH1gQ0ABAEAB20AA8NpAAIaBA",
+      "file_unique_id": "AQADYfWBDQAEw2kAAg",
+      "file_size": 3680,
+      "width": 128,
+      "height": 128
+     },
+     "file_id": "CAACAgIAAxkBAAICyl8C98Vi9ZilyMpohUQTORJh_NBOAALSAAPsxO8EwqolUHs0SdgaBA",
+     "file_unique_id": "AgAD0gAD7MTvBA",
+     "file_size": 17658
+    }
+   }
+  }
+ ]
+}

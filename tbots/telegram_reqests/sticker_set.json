@@ -1,0 +1,2051 @@
+{
+ "ok": true,
+ "result": {
+  "name": "mops_dyadya_pyos",
+  "title": "\u041c\u043e\u043f\u0441 \u0434\u044f\u0434\u044f \u043f\u0451\u0441",
+  "is_animated": false,
+  "contains_masks": false,
+  "stickers": [
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude44",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADGQEAAgGxXv9lygFKuq9Qi6Ko0KxoGBUF0N0AAsIAA-zE7wTQuSqJGbJFB-r0gQ0ABAEAB20AAyNmAAIaBA",
+     "file_unique_id": "AQAD6vSBDQAEI2YAAg",
+     "file_size": 4604,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxkBAAIBsV7_ZcoBSrqvUIuiqNCsaBgVBdDdAALCAAPsxO8E0LkqiRmyRQcaBA",
+    "file_unique_id": "AgADwgAD7MTvBA",
+    "file_size": 21560
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude07",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADGQEAAgGyXv9mU_XPftyyhlKZg8s2k7LuaP8AAsQAA-zE7wSSx0ZPVMYmQ_77gQ0ABAEAB20AAyxqAAIaBA",
+     "file_unique_id": "AQAD_vuBDQAELGoAAg",
+     "file_size": 4160,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxkBAAIBsl7_ZlP1z37csoZSmYPLNpOy7mj_AALEAAPsxO8EksdGT1TGJkMaBA",
+    "file_unique_id": "AgADxAAD7MTvBA",
+    "file_size": 19048
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude21",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECybGIQWIS4IRg6F3mQCTYwAAsYAA-zE7wTyOhvpa0lyxboEgg0ABAEAB20AAzZsAAIaBA",
+     "file_unique_id": "AQADugSCDQAENmwAAg",
+     "file_size": 3170,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAsmxiEFiEuCEYOhd5kAk2MAALGAAPsxO8E8job6WtJcsUaBA",
+    "file_unique_id": "AgADxgAD7MTvBA",
+    "file_size": 16552
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude24",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEE4xvcc0fIrHWiqH0g7xXUQAAsgAA-zE7wTvRIOALO1wtuHJgQ0ABAEAB20AA5ZsAAIaBA",
+     "file_unique_id": "AQAD4cmBDQAElmwAAg",
+     "file_size": 3958,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBOMb3HNHyKx1oqh9IO8V1EAALIAAPsxO8E70SDgCztcLYaBA",
+    "file_unique_id": "AgADyAAD7MTvBA",
+    "file_size": 18680
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude2e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHfMrOEW1sSBxOCjtjGvM8gAAsoAA-zE7wTrVVm15aKJ7NCpgQ0ABAEAB20AA46sAAIaBA",
+     "file_unique_id": "AQAD0KmBDQAEjqwAAg",
+     "file_size": 3530,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB3zKzhFtbEgcTgo7YxrzPIAALKAAPsxO8E61VZteWiiewaBA",
+    "file_unique_id": "AgADygAD7MTvBA",
+    "file_size": 16934
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude0a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADGQEAAgInXwLo1DaZvqg3zF198b9FVQdnCvoAAswAA-zE7wQuR5Ari2oR3SrxgQ0ABAEAB20AA-5kAAIaBA",
+     "file_unique_id": "AQADKvGBDQAE7mQAAg",
+     "file_size": 3598,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxkBAAICJ18C6NQ2mb6oN8xdffG_RVUHZwr6AALMAAPsxO8ELkeQK4tqEd0aBA",
+    "file_unique_id": "AgADzAAD7MTvBA",
+    "file_size": 16938
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude03",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENTXrS9ZRm0jBBs5adOGKS0AAs4AA-zE7wTVdabC_Tnr-JKrgQ0ABAEAB20AAxy3AAIaBA",
+     "file_unique_id": "AQADkquBDQAEHLcAAg",
+     "file_size": 3520,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDU160vWUZtIwQbOWnThiktAALOAAPsxO8E1XWmwv056_gaBA",
+    "file_unique_id": "AgADzgAD7MTvBA",
+    "file_size": 17348
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude44",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJX7jgE2ikSOtyxvVcfZGsMAAtAAA-zE7wRAsHZJ-RJoTYrGgQ0ABAEAB20AA12UAAIaBA",
+     "file_unique_id": "AQADisaBDQAEXZQAAg",
+     "file_size": 4224,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCV-44BNopEjrcsb1XH2RrDAALQAAPsxO8EQLB2SfkSaE0aBA",
+    "file_unique_id": "AgAD0AAD7MTvBA",
+    "file_size": 18350
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude09",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADGQEAAgLKXwL3xWL1mKXIymiFRBM5EmH80E4AAtIAA-zE7wTCqiVQezRJ2GH1gQ0ABAEAB20AA8NpAAIaBA",
+     "file_unique_id": "AQADYfWBDQAEw2kAAg",
+     "file_size": 3680,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxkBAAICyl8C98Vi9ZilyMpohUQTORJh_NBOAALSAAPsxO8EwqolUHs0SdgaBA",
+    "file_unique_id": "AgAD0gAD7MTvBA",
+    "file_size": 17658
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude10",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEIQ3mXLWWeG4cjYqQ68-SWcAAtQAA-zE7wShp_9n2eDAgtgEgg0ABAEAB20AA-x-AAIaBA",
+     "file_unique_id": "AQAD2ASCDQAE7H4AAg",
+     "file_size": 3160,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCEN5ly1lnhuHI2KkOvPklnAALUAAPsxO8Eoaf_Z9ngwIIaBA",
+    "file_unique_id": "AgAD1AAD7MTvBA",
+    "file_size": 15986
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2615",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMf8fOjfo2nn9NB4Z5gX8ooAAtYAA-zE7wQWA-WaK5Cl91GzgQ0ABAEAB20AA8eSAAIaBA",
+     "file_unique_id": "AQADUbOBDQAEx5IAAg",
+     "file_size": 5730,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDH_Hzo36Np5_TQeGeYF_KKAALWAAPsxO8EFgPlmiuQpfcaBA",
+    "file_unique_id": "AgAD1gAD7MTvBA",
+    "file_size": 28386
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2615",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMp9uV2z0Aa0MLCDPrMbHdYAAtgAA-zE7wTHdpaDqeNvM2X3gQ0ABAEAB20AA3dlAAIaBA",
+     "file_unique_id": "AQADZfeBDQAEd2UAAg",
+     "file_size": 5664,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDKfblds9AGtDCwgz6zGx3WAALYAAPsxO8Ex3aWg6njbzMaBA",
+    "file_unique_id": "AgAD2AAD7MTvBA",
+    "file_size": 29352
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udf54",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHCaSSgOpqJHthWwgqOqAjEAAtoAA-zE7wR-Sfgyl95hi8_4gQ0ABAEAB20AA1VrAAIaBA",
+     "file_unique_id": "AQADz_iBDQAEVWsAAg",
+     "file_size": 2730,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBwmkkoDqaiR7YVsIKjqgIxAALaAAPsxO8Efkn4MpfeYYsaBA",
+    "file_unique_id": "AgAD2gAD7MTvBA",
+    "file_size": 14526
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udd75",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEC2o_r8kxqzm5mCh518cvtQAAuIAA-zE7wTt4Gx9FaQR0bD1gQ0ABAEAB20AA6F2AAIaBA",
+     "file_unique_id": "AQADsPWBDQAEoXYAAg",
+     "file_size": 3214,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAtqP6_JMas5uZgoedfHL7UAALiAAPsxO8E7eBsfRWkEdEaBA",
+    "file_unique_id": "AgAD4gAD7MTvBA",
+    "file_size": 24648
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECWJV7AozXSUZZL4Jl7w2BcAAuQAA-zE7wSFjZoS6m4XeMz0gQ0ABAEAB20AA01rAAIaBA",
+     "file_unique_id": "AQADzPSBDQAETWsAAg",
+     "file_size": 4110,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAliVewKM10lGWS-CZe8NgXAALkAAPsxO8EhY2aEupuF3gaBA",
+    "file_unique_id": "AgAD5AAD7MTvBA",
+    "file_size": 31604
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udd0c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEEvmwr0giJ8CD0xauQH_I1IAAuYAA-zE7wTS-RzM350o4z_6gQ0ABAEAB20AA75sAAIaBA",
+     "file_unique_id": "AQADP_qBDQAEvmwAAg",
+     "file_size": 3650,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBL5sK9IIifAg9MWrkB_yNSAALmAAPsxO8E0vkczN-dKOMaBA",
+    "file_unique_id": "AgAD5gAD7MTvBA",
+    "file_size": 18522
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc2e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEOApHsj0FX9SU-qdT-vbzgkAAugAA-zE7wQZX1iTw0NPvLEFgg0ABAEAB20AAyZoAAIaBA",
+     "file_unique_id": "AQADsQWCDQAEJmgAAg",
+     "file_size": 4602,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDgKR7I9BV_UlPqnU_r284JAALoAAPsxO8EGV9Yk8NDT7waBA",
+    "file_unique_id": "AgAD6AAD7MTvBA",
+    "file_size": 27730
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFifV0-9GIgEa7KKQAuguA4AAuoAA-zE7wQOxVe3eu8kOzoJgg0ABAEAB20AA_ZvAAIaBA",
+     "file_unique_id": "AQADOgmCDQAE9m8AAg",
+     "file_size": 4602,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBYn1dPvRiIBGuyikALoLgOAALqAAPsxO8EDsVXt3rvJDsaBA",
+    "file_unique_id": "AgAD6gAD7MTvBA",
+    "file_size": 39974
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc82",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMxfN65k0yaze9phtCcxWwcAAuwAA-zE7wSkoQ6vCrk6cRXKgQ0ABAEAB20AA-9tAAIaBA",
+     "file_unique_id": "AQADFcqBDQAE720AAg",
+     "file_size": 5018,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDMXzeuZNMms3vaYbQnMVsHAALsAAPsxO8EpKEOrwq5OnEaBA",
+    "file_unique_id": "AgAD7AAD7MTvBA",
+    "file_size": 30532
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2693",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEP51DSv_goo0Vq-LZ893LpMAAu4AA-zE7wTHVc4dFIuT_KyzgQ0ABAEAB20AA9mQAAIaBA",
+     "file_unique_id": "AQADrLOBDQAE2ZAAAg",
+     "file_size": 4104,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD-dQ0r_4KKNFavi2fPdy6TAALuAAPsxO8Ex1XOHRSLk_waBA",
+    "file_unique_id": "AgAD7gAD7MTvBA",
+    "file_size": 24034
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2615",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEOpSYd_dmdNHfiuedD-Ag-4AAvAAA-zE7wT2geNoV05vB2C3gQ0ABAEAB20AAyONAAIaBA",
+     "file_unique_id": "AQADYLeBDQAEI40AAg",
+     "file_size": 4260,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDqUmHf3ZnTR34rnnQ_gIPuAALwAAPsxO8E9oHjaFdObwcaBA",
+    "file_unique_id": "AgAD8AAD7MTvBA",
+    "file_size": 22984
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude10",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFW01OmugEaBkqSp8IemESsAAvIAA-zE7wSzdtsf_rZzAbL4gQ0ABAEAB20AA6BtAAIaBA",
+     "file_unique_id": "AQADsviBDQAEoG0AAg",
+     "file_size": 2442,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBVtNTproBGgZKkqfCHphErAALyAAPsxO8Es3bbH_62cwEaBA",
+    "file_unique_id": "AgAD8gAD7MTvBA",
+    "file_size": 13652
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude41",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEOFAj8f0mXYcxzjdXpYDJXgAAvQAA-zE7wTIuqT5d4-rTH4Bgg0ABAEAB20AA6hoAAIaBA",
+     "file_unique_id": "AQADfgGCDQAEqGgAAg",
+     "file_size": 4684,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDhQI_H9Jl2HMc43V6WAyV4AAL0AAPsxO8EyLqk-XePq0waBA",
+    "file_unique_id": "AgAD9AAD7MTvBA",
+    "file_size": 34522
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udf1d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJkh-67cyxLePQV4mgMeTi4AAvYAA-zE7wTVpk6dx_3XkCezgQ0ABAEAB20AAw6QAAIaBA",
+     "file_unique_id": "AQADJ7OBDQAEDpAAAg",
+     "file_size": 3920,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCZIfuu3MsS3j0FeJoDHk4uAAL2AAPsxO8E1aZOncf915AaBA",
+    "file_unique_id": "AgAD9gAD7MTvBA",
+    "file_size": 20904
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude35",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEESef0UoHETaXKKHXv3c8IAAAvgAA-zE7wSOBhx7jrndBq22gQ0ABAEAB20AA-ORAAIaBA",
+     "file_unique_id": "AQADrbaBDQAE45EAAg",
+     "file_size": 4332,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBEnn9FKBxE2lyih1793PCAAAL4AAPsxO8EjgYce4653QYaBA",
+    "file_unique_id": "AgAD-AAD7MTvBA",
+    "file_size": 22850
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude34",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEEJ8LIzYedaBam1IwpezyvMAAvoAA-zE7wR9DKj9wFnCghaugQ0ABAEAB20AA1aUAAIaBA",
+     "file_unique_id": "AQADFq6BDQAEVpQAAg",
+     "file_size": 5400,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBCfCyM2HnWgWptSMKXs8rzAAL6AAPsxO8EfQyo_cBZwoIaBA",
+    "file_unique_id": "AgAD-gAD7MTvBA",
+    "file_size": 37744
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHi-7HEynwwJtFgotVdmp3YAAvwAA-zE7wSW3pU7Y4XU2f3EgQ0ABAEAB20AAw2ZAAIaBA",
+     "file_unique_id": "AQAD_cSBDQAEDZkAAg",
+     "file_size": 3490,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB4vuxxMp8MCbRYKLVXZqd2AAL8AAPsxO8Elt6VO2OF1NkaBA",
+    "file_unique_id": "AgAD_AAD7MTvBA",
+    "file_size": 17448
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude15",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEGjvFMgceBM3jif4C5uPKJ8AAv4AA-zE7wT1whpXuTatjT8Bgg0ABAEAB20AAxhjAAIaBA",
+     "file_unique_id": "AQADPwGCDQAEGGMAAg",
+     "file_size": 3494,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBo7xTIHHgTN44n-AubjyifAAL-AAPsxO8E9cIaV7k2rY0aBA",
+    "file_unique_id": "AgAD_gAD7MTvBA",
+    "file_size": 18392
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude4f",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEId9vUECmYxMN3nKTpYbuBUAAwEAAuzE7wQbPC4qB79L_7G5gQ0ABAEAB20AAz6VAAIaBA",
+     "file_unique_id": "AQADsbmBDQAEPpUAAg",
+     "file_size": 5124,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCHfb1BApmMTDd5yk6WG7gVAAMBAALsxO8EGzwuKge_S_8aBA",
+    "file_unique_id": "AgAEAQAC7MTvBA",
+    "file_size": 27560
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude12",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADGQEAAgGiXv9QUj4y9klyf6TZUbPrkehMXnQAAgIBAALsxO8E8XkXJNvf5XPrs4ENAAQBAAdtAAMzmwACGgQ",
+     "file_unique_id": "AQAD67OBDQAEM5sAAg",
+     "file_size": 4344,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxkBAAIBol7_UFI-MvZJcn-k2VGz65HoTF50AAICAQAC7MTvBPF5FyTb3-VzGgQ",
+    "file_unique_id": "AgADAgEAAuzE7wQ",
+    "file_size": 23630
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc15",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEOSx3ZTX9JbWBIrqn49gjkYAAgQBAALsxO8EGFp9JOQeuBR4BIINAAQBAAdtAAOgaAACGgQ",
+     "file_unique_id": "AQADeASCDQAEoGgAAg",
+     "file_size": 5834,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDksd2U1_SW1gSK6p-PYI5GAAIEAQAC7MTvBBhafSTkHrgUGgQ",
+    "file_unique_id": "AgADBAEAAuzE7wQ",
+    "file_size": 40670
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude27",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEP9WsIYrwJ4ebT5TVnfl5-0AAgYBAALsxO8ENmKTko97gJfN74ENAAQBAAdtAAMbbgACGgQ",
+     "file_unique_id": "AQADze-BDQAEG24AAg",
+     "file_size": 2514,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD_VrCGK8CeHm0-U1Z35eftAAIGAQAC7MTvBDZik5KPe4CXGgQ",
+    "file_unique_id": "AgADBgEAAuzE7wQ",
+    "file_size": 13386
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude3a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBxmV8a_EAeZiYuUKGIcvUUAAggBAALsxO8E6AxuVDz8_sHE_IENAAQBAAdtAANvcwACGgQ",
+     "file_unique_id": "AQADxPyBDQAEb3MAAg",
+     "file_size": 5812,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAcZlfGvxAHmYmLlChiHL1FAAIIAQAC7MTvBOgMblQ8_P7BGgQ",
+    "file_unique_id": "AgADCAEAAuzE7wQ",
+    "file_size": 36448
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2764",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFKeY6N10IUIxGCxdXV_kM4AAgoBAALsxO8EJKnt5dzKfmBD_YENAAQBAAdtAANhZQACGgQ",
+     "file_unique_id": "AQADQ_2BDQAEYWUAAg",
+     "file_size": 4412,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBSnmOjddCFCMRgsXV1f5DOAAIKAQAC7MTvBCSp7eXcyn5gGgQ",
+    "file_unique_id": "AgADCgEAAuzE7wQ",
+    "file_size": 45296
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udf5c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEK7d4YUg9Dyt7O4xMlgzRFUAAgwBAALsxO8ERdECfebA6kKe9IENAAQBAAdtAAOobAACGgQ",
+     "file_unique_id": "AQADnvSBDQAEqGwAAg",
+     "file_size": 2904,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCu3eGFIPQ8rezuMTJYM0RVAAIMAQAC7MTvBEXRAn3mwOpCGgQ",
+    "file_unique_id": "AgADDAEAAuzE7wQ",
+    "file_size": 14716
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude04",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEH-O_Gsf8edTwya-XSTUdPwAAg4BAALsxO8EhgVYAuO5zVWL8IENAAQBAAdtAAMLbQACGgQ",
+     "file_unique_id": "AQADi_CBDQAEC20AAg",
+     "file_size": 4754,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB_jvxrH_HnU8Mmvl0k1HT8AAIOAQAC7MTvBIYFWALjuc1VGgQ",
+    "file_unique_id": "AgADDgEAAuzE7wQ",
+    "file_size": 28118
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude20",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEEOli6bAOXTiUWnTUXnlgqIAAhABAALsxO8EsqC2zFVMJLO2rIENAAQBAAdtAAM6mQACGgQ",
+     "file_unique_id": "AQADtqyBDQAEOpkAAg",
+     "file_size": 5010,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBDpYumwDl04lFp01F55YKiAAIQAQAC7MTvBLKgtsxVTCSzGgQ",
+    "file_unique_id": "AgADEAEAAuzE7wQ",
+    "file_size": 39866
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2764",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEN2GC5kC9UARM312Q6D--wkAAhIBAALsxO8EIhlefx4OLLJZuYENAAQBAAdtAANvkgACGgQ",
+     "file_unique_id": "AQADWbmBDQAEb5IAAg",
+     "file_size": 5304,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDdhguZAvVAETN9dkOg_vsJAAISAQAC7MTvBCIZXn8eDiyyGgQ",
+    "file_unique_id": "AgADEgEAAuzE7wQ",
+    "file_size": 29366
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEE9yNoM-QUGQTm2w58Oo7kwAAhQBAALsxO8EgeeuuORZorxHuoENAAQBAAdtAAMKmgACGgQ",
+     "file_unique_id": "AQADR7qBDQAECpoAAg",
+     "file_size": 2866,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBPcjaDPkFBkE5tsOfDqO5MAAIUAQAC7MTvBIHnrrjkWaK8GgQ",
+    "file_unique_id": "AgADFAEAAuzE7wQ",
+    "file_size": 17762
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc7c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEAm-btiPajcft6E9FAABSH82AAIWAQAC7MTvBKS_uwg6O42DDAeCDQAEAQAHbQAD-2oAAhoE",
+     "file_unique_id": "AQADDAeCDQAE-2oAAg",
+     "file_size": 4788,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAJvm7Yj2o3H7ehPRQAAUh_NgACFgEAAuzE7wSkv7sIOjuNgxoE",
+    "file_unique_id": "AgADFgEAAuzE7wQ",
+    "file_size": 23428
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHCTz147YVx5oFugB2pDOJ4AAhgBAALsxO8EtWnBoLdvxVESqoENAAQBAAdtAAMeqwACGgQ",
+     "file_unique_id": "AQADEqqBDQAEHqsAAg",
+     "file_size": 4404,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBwk89eO2FceaBboAdqQzieAAIYAQAC7MTvBLVpwaC3b8VRGgQ",
+    "file_unique_id": "AgADGAEAAuzE7wQ",
+    "file_size": 23260
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udfa9",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBrRJoGygpso9dPebuMeZr4AAhoBAALsxO8Eseo6e1pCrcziBIINAAQBAAdtAAMuaAACGgQ",
+     "file_unique_id": "AQAD4gSCDQAELmgAAg",
+     "file_size": 2512,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAa0SaBsoKbKPXT3m7jHma-AAIaAQAC7MTvBLHqOntaQq3MGgQ",
+    "file_unique_id": "AgADGgEAAuzE7wQ",
+    "file_size": 18842
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u2615",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEEsULhGsnFx_Bkyb8dg7JDYAAhwBAALsxO8EnqnGsJHPFtNeqYENAAQBAAdtAANitQACGgQ",
+     "file_unique_id": "AQADXqmBDQAEYrUAAg",
+     "file_size": 4284,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBLFC4RrJxcfwZMm_HYOyQ2AAIcAQAC7MTvBJ6pxrCRzxbTGgQ",
+    "file_unique_id": "AgADHAEAAuzE7wQ",
+    "file_size": 39196
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udf7b",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFFnOkLtrtrDzbnJkU8QE2MAAh4BAALsxO8EX6LnxG08C8uzqYENAAQBAAdtAAPMtAACGgQ",
+     "file_unique_id": "AQADs6mBDQAEzLQAAg",
+     "file_size": 4080,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBRZzpC7a7aw825yZFPEBNjAAIeAQAC7MTvBF-i58RtPAvLGgQ",
+    "file_unique_id": "AgADHgEAAuzE7wQ",
+    "file_size": 21524
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc82",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEB7uO3JOojT5y6-mFmpS604AAiABAALsxO8EBsvTp7bwGzrgt4ENAAQBAAdtAAOJjgACGgQ",
+     "file_unique_id": "AQAD4LeBDQAEiY4AAg",
+     "file_size": 3138,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAe7jtyTqI0-cuvphZqUutOAAIgAQAC7MTvBAbL06e28Bs6GgQ",
+    "file_unique_id": "AgADIAEAAuzE7wQ",
+    "file_size": 21312
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude21",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEObN093I9YgwG7EWW5_D2sMAAiIBAALsxO8E6vLkg8lHuEp194ENAAQBAAdtAANlcgACGgQ",
+     "file_unique_id": "AQADdfeBDQAEZXIAAg",
+     "file_size": 4210,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDmzdPdyPWIMBuxFlufw9rDAAIiAQAC7MTvBOry5IPJR7hKGgQ",
+    "file_unique_id": "AgADIgEAAuzE7wQ",
+    "file_size": 20084
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd18",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEIWzV2MU6pRNCvNlppqoY9oAAiQBAALsxO8ECLD48k6rQKGww4ENAAQBAAdtAAOrkAACGgQ",
+     "file_unique_id": "AQADsMOBDQAEq5AAAg",
+     "file_size": 3568,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCFs1djFOqUTQrzZaaaqGPaAAIkAQAC7MTvBAiw-PJOq0ChGgQ",
+    "file_unique_id": "AgADJAEAAuzE7wQ",
+    "file_size": 22974
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc72",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEAKn_SjxWd6LPD0kf8seSC0AAikBAALsxO8EdnMNE_pdNZzatYENAAQBAAdtAAPEoQACGgQ",
+     "file_unique_id": "AQAD2rWBDQAExKEAAg",
+     "file_size": 4246,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRACp_0o8Vneizw9JH_LHkgtAAIpAQAC7MTvBHZzDRP6XTWcGgQ",
+    "file_unique_id": "AgADKQEAAuzE7wQ",
+    "file_size": 24668
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude34",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJ_3XbXOzQUNM7-K0sU7ptoAAjkBAALsxO8Etl0XLMOR45TGBoINAAQBAAdtAAN_mQACGgQ",
+     "file_unique_id": "AQADxgaCDQAEf5kAAg",
+     "file_size": 5654,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCf9121zs0FDTO_itLFO6baAAI5AQAC7MTvBLZdFyzDkeOUGgQ",
+    "file_unique_id": "AgADOQEAAuzE7wQ",
+    "file_size": 40600
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u26d4",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHqY924QPxgUlF_2sEQiFz8AAjsBAALsxO8E6wlVeewPTMj28YENAAQBAAdtAAMPmAACGgQ",
+     "file_unique_id": "AQAD9vGBDQAED5gAAg",
+     "file_size": 4088,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB6mPduED8YFJRf9rBEIhc_AAI7AQAC7MTvBOsJVXnsD0zIGgQ",
+    "file_unique_id": "AgADOwEAAuzE7wQ",
+    "file_size": 29420
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc76",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJcPjclNA1pbW2IDHGNoeooAAj0BAALsxO8ECYrFI-5vETyux4ENAAQBAAdtAAMinAACGgQ",
+     "file_unique_id": "AQADrseBDQAEIpwAAg",
+     "file_size": 4150,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCXD43JTQNaW1tiAxxjaHqKAAI9AQAC7MTvBAmKxSPubxE8GgQ",
+    "file_unique_id": "AgADPQEAAuzE7wQ",
+    "file_size": 28098
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEPH2khBufggxihRDQUrg8EYAAj8BAALsxO8EV77YrgSAQ5uq-4ENAAQBAAdtAANvmgACGgQ",
+     "file_unique_id": "AQADqvuBDQAEb5oAAg",
+     "file_size": 4224,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDx9pIQbn4IMYoUQ0FK4PBGAAI_AQAC7MTvBFe-2K4EgEObGgQ",
+    "file_unique_id": "AgADPwEAAuzE7wQ",
+    "file_size": 30738
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude2e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENcOhMvcqwpI1Q8PEpb1SbMAAkEBAALsxO8Em1CuyHs0qWYIAAGCDQAEAQAHbQADzpoAAhoE",
+     "file_unique_id": "AQADCAABgg0ABM6aAAI",
+     "file_size": 3722,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDXDoTL3KsKSNUPDxKW9UmzAAJBAQAC7MTvBJtQrsh7NKlmGgQ",
+    "file_unique_id": "AgADQQEAAuzE7wQ",
+    "file_size": 22436
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude0b",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBWcYLS1sI9bww0ZqL1MPT4AAkMBAALsxO8E6Jy9_56vu-EE94ENAAQBAAdtAAOToAACGgQ",
+     "file_unique_id": "AQADBPeBDQAEk6AAAg",
+     "file_size": 8200,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAVnGC0tbCPW8MNGai9TD0-AAJDAQAC7MTvBOicvf-er7vhGgQ",
+    "file_unique_id": "AgADQwEAAuzE7wQ",
+    "file_size": 48194
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u270a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENN8IL-v-WhE8f6X4XZoVhAAAkUBAALsxO8ECiGc7eGyOiUk74ENAAQBAAdtAAPimgACGgQ",
+     "file_unique_id": "AQADJO-BDQAE4poAAg",
+     "file_size": 5876,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDTfCC_r_loRPH-l-F2aFYQAAJFAQAC7MTvBAohnO3hsjolGgQ",
+    "file_unique_id": "AgADRQEAAuzE7wQ",
+    "file_size": 38726
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude16",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMIKSPvnlJ-Z2oQQcFV-UOAAAkcBAALsxO8EI-ncBZ1EpRdh9YENAAQBAAdtAAMXnAACGgQ",
+     "file_unique_id": "AQADYfWBDQAEF5wAAg",
+     "file_size": 3306,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDCCkj755SfmdqEEHBVflDgAAJHAQAC7MTvBCPp3AWdRKUXGgQ",
+    "file_unique_id": "AgADRwEAAuzE7wQ",
+    "file_size": 21500
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd18",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEElFRGPR6v2PTL0cVXNgdYQAAkkBAALsxO8EfYWrMjC8Ii9yBIINAAQBAAdtAAMgmQACGgQ",
+     "file_unique_id": "AQADcgSCDQAEIJkAAg",
+     "file_size": 4386,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBJRURj0er9j0y9HFVzYHWEAAJJAQAC7MTvBH2FqzIwvCIvGgQ",
+    "file_unique_id": "AgADSQEAAuzE7wQ",
+    "file_size": 36026
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBPiF5FFA3r99hdku2niFVYAAksBAALsxO8ETgvBKSXiXSN09YENAAQBAAdtAANSsAACGgQ",
+     "file_unique_id": "AQADdPWBDQAEUrAAAg",
+     "file_size": 2560,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAT4heRRQN6_fYXZLtp4hVWAAJLAQAC7MTvBE4LwSkl4l0jGgQ",
+    "file_unique_id": "AgADSwEAAuzE7wQ",
+    "file_size": 10910
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc69",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEKimTqK29WymPTXoHuChrYMAAlMBAALsxO8Ea9lIb_u60UvzAoINAAQBAAdtAAOAsgACGgQ",
+     "file_unique_id": "AQAD8wKCDQAEgLIAAg",
+     "file_size": 4354,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCopk6itvVspj016B7goa2DAAJTAQAC7MTvBGvZSG_7utFLGgQ",
+    "file_unique_id": "AgADUwEAAuzE7wQ",
+    "file_size": 12446
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc15",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBlvQ3Me6lQb_AXwWaNHCjgAAlcBAALsxO8EhTQ-SgHmu0WrAoINAAQBAAdtAANhsQACGgQ",
+     "file_unique_id": "AQADqwKCDQAEYbEAAg",
+     "file_size": 2838,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAZb0NzHupUG_wF8FmjRwo4AAJXAQAC7MTvBIU0PkoB5rtFGgQ",
+    "file_unique_id": "AgADVwEAAuzE7wQ",
+    "file_size": 7888
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENRI4VYge6e-WEOCIuAB4TMAAlkBAALsxO8ESMHm7K0c825vAoINAAQBAAdtAAOsrQACGgQ",
+     "file_unique_id": "AQADbwKCDQAErK0AAg",
+     "file_size": 4806,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDUSOFWIHunvlhDgiLgAeEzAAJZAQAC7MTvBEjB5uytHPNuGgQ",
+    "file_unique_id": "AgADWQEAAuzE7wQ",
+    "file_size": 13754
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEArpR_gUdqCFP2rDug5EfmAAAl4BAALsxO8EV5ZxCQGliI45BIINAAQBAAdtAAM3vAACGgQ",
+     "file_unique_id": "AQADOQSCDQAEN7wAAg",
+     "file_size": 4064,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAK6Uf4FHaghT9qw7oORH5gAAJeAQAC7MTvBFeWcQkBpYiOGgQ",
+    "file_unique_id": "AgADXgEAAuzE7wQ",
+    "file_size": 25408
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83c\udfa4",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEInfP26O6wonMzVxrwzDEbkAAmABAALsxO8EOBMKV_Fqb1hH_4ENAAQBAAdtAAP2tAACGgQ",
+     "file_unique_id": "AQADR_-BDQAE9rQAAg",
+     "file_size": 3438,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCJ3z9ujusKJzM1ca8MwxG5AAJgAQAC7MTvBDgTClfxam9YGgQ",
+    "file_unique_id": "AgADYAEAAuzE7wQ",
+    "file_size": 25192
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEDC4ldfJODZFZDjyk6Ez0mAAAmIBAALsxO8Errbs3l0X7aK9-YENAAQBAAdtAAPetQACGgQ",
+     "file_unique_id": "AQADvfmBDQAE3rUAAg",
+     "file_size": 4204,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAwuJXXyTg2RWQ48pOhM9JgAAJiAQAC7MTvBK627N5dF-2iGgQ",
+    "file_unique_id": "AgADYgEAAuzE7wQ",
+    "file_size": 25546
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\u270a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NELOoz5JWOiAOXywEq8BXu6gAAmQBAALsxO8E7YY6ahDX2bhJ8oENAAQBAAdtAAMGtgACGgQ",
+     "file_unique_id": "AQADSfKBDQAEBrYAAg",
+     "file_size": 4588,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCzqM-SVjogDl8sBKvAV7uoAAJkAQAC7MTvBO2GOmoQ19m4GgQ",
+    "file_unique_id": "AgADZAEAAuzE7wQ",
+    "file_size": 27768
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMXXLkXYTwxxfKsbXXP4tbcAAmoBAALsxO8EfStjHhrTCfwuGYINAAQBAAdtAAM8AAMaBA",
+     "file_unique_id": "AQADLhmCDQAEPAAD",
+     "file_size": 5118,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDF1y5F2E8McXyrG11z-LW3AAJqAQAC7MTvBH0rYx4a0wn8GgQ",
+    "file_unique_id": "AgADagEAAuzE7wQ",
+    "file_size": 38304
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc69",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEB4LybgdJYQWMeHGwmTmhr8AAmwBAALsxO8EPevU9gSE69458YENAAQBAAdtAAOouAACGgQ",
+     "file_unique_id": "AQADOfGBDQAEqLgAAg",
+     "file_size": 4306,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAeC8m4HSWEFjHhxsJk5oa_AAJsAQAC7MTvBD3r1PYEhOveGgQ",
+    "file_unique_id": "AgADbAEAAuzE7wQ",
+    "file_size": 33170
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude32",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEAABS_6yFXn2u_znadwc1IVoAAJuAQAC7MTvBIpk73WE-NYJ2BKCDQAEAQAHbQADOAADGgQ",
+     "file_unique_id": "AQAD2BKCDQAEOAAD",
+     "file_size": 4792,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAAAUv-shV59rv852ncHNSFaAACbgEAAuzE7wSKZO91hPjWCRoE",
+    "file_unique_id": "AgADbgEAAuzE7wQ",
+    "file_size": 33730
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc79",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEH5B2wABfzW0wzQYjhha23qdAAKTAQAC7MTvBB943py8Hb_8cT6CDQAEAQAHbQADc4cAAhoE",
+     "file_unique_id": "AQADcT6CDQAEc4cAAg",
+     "file_size": 6576,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB-QdsAAX81tMM0GI4YWtt6nQACkwEAAuzE7wQfeN6cvB2__BoE",
+    "file_unique_id": "AgADkwEAAuzE7wQ",
+    "file_size": 37418
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc79",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMtAGYxAThuNsfqi9p7qb50AApUBAALsxO8EiR_J5tkCZ-gtOIINAAQBAAdtAAN4jgACGgQ",
+     "file_unique_id": "AQADLTiCDQAEeI4AAg",
+     "file_size": 4232,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDLQBmMQE4bjbH6ovae6m-dAAKVAQAC7MTvBIkfyebZAmfoGgQ",
+    "file_unique_id": "AgADlQEAAuzE7wQ",
+    "file_size": 23720
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude2f",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENUt7bE4ITKoAici4wif0IIAApcBAALsxO8EMQp_yponUWW6Q0sNAAQBAAdtAAO3WAACGgQ",
+     "file_unique_id": "AQADukNLDQAEt1gAAg",
+     "file_size": 4678,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDVLe2xOCEyqAInIuMIn9CCAAKXAQAC7MTvBDEKf8qaJ1FlGgQ",
+    "file_unique_id": "AgADlwEAAuzE7wQ",
+    "file_size": 22610
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude27",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECNpMAobuQHbcmkaUclsI_YAApkBAALsxO8EwAYf0qaS41BLG0sNAAQBAAdtAAPAWwACGgQ",
+     "file_unique_id": "AQADSxtLDQAEwFsAAg",
+     "file_size": 4598,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAjaTAKG7kB23JpGlHJbCP2AAKZAQAC7MTvBMAGH9KmkuNQGgQ",
+    "file_unique_id": "AgADmQEAAuzE7wQ",
+    "file_size": 39508
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udd2b",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEM_ns_V9aPeHWEYhqIVFy_4AApsBAALsxO8E349wMWLIQlN4QEsNAAQBAAdtAAOXVgACGgQ",
+     "file_unique_id": "AQADeEBLDQAEl1YAAg",
+     "file_size": 3778,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDP57P1fWj3h1hGIaiFRcv-AAKbAQAC7MTvBN-PcDFiyEJTGgQ",
+    "file_unique_id": "AgADmwEAAuzE7wQ",
+    "file_size": 38466
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd10",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJiq0_lyWuniYML6ZTWUYBIAAp0BAALsxO8EzYMR2ObKn3FHH0sNAAQBAAdtAAMiXgACGgQ",
+     "file_unique_id": "AQADRx9LDQAEIl4AAg",
+     "file_size": 3914,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCYqtP5clrp4mDC-mU1lGASAAKdAQAC7MTvBM2DEdjmyp9xGgQ",
+    "file_unique_id": "AgADnQEAAuzE7wQ",
+    "file_size": 19362
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEDtQ9Oc32NQvr1ByrnfdiNYAAp8BAALsxO8ENFs0R0vnSjXnQ0sNAAQBAAdtAAO8XwACGgQ",
+     "file_unique_id": "AQAD50NLDQAEvF8AAg",
+     "file_size": 5120,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRA7UPTnN9jUL69Qcq533YjWAAKfAQAC7MTvBDRbNEdL50o1GgQ",
+    "file_unique_id": "AgADnwEAAuzE7wQ",
+    "file_size": 29762
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc79",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHd0JRcR34lYXIRdfCH75FIAAqEBAALsxO8E9NoMeBBm12PqH0sNAAQBAAdtAANDXQACGgQ",
+     "file_unique_id": "AQAD6h9LDQAEQ10AAg",
+     "file_size": 4946,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB3dCUXEd-JWFyEXXwh--RSAAKhAQAC7MTvBPTaDHgQZtdjGgQ",
+    "file_unique_id": "AgADoQEAAuzE7wQ",
+    "file_size": 24556
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc6b",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEKXNuFOEtXR7r9uAJ_XkDY8AAqMBAALsxO8ERTsuOEVvdtZ8NYINAAQBAAdtAAPjfgACGgQ",
+     "file_unique_id": "AQADfDWCDQAE434AAg",
+     "file_size": 6328,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRClzbhThLV0e6_bgCf15A2PAAKjAQAC7MTvBEU7LjhFb3bWGgQ",
+    "file_unique_id": "AgADowEAAuzE7wQ",
+    "file_size": 42574
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude10",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECnqbqgXgRLqSbITz4WHBMkAAqUBAALsxO8ECOhCs3DD4ruQP0sNAAQBAAdtAAOQZQACGgQ",
+     "file_unique_id": "AQADkD9LDQAEkGUAAg",
+     "file_size": 4144,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAp6m6oF4ES6kmyE8-FhwTJAAKlAQAC7MTvBAjoQrNww-K7GgQ",
+    "file_unique_id": "AgADpQEAAuzE7wQ",
+    "file_size": 20080
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude31",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NENFY9zSde9L2WNki3EIC3NMAAqcBAALsxO8EH_4nql65YfYAASiCDQAEAQAHbQADD4kAAhoE",
+     "file_unique_id": "AQAEKIINAAQPiQAC",
+     "file_size": 4314,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDRWPc0nXvS9ljZItxCAtzTAAKnAQAC7MTvBB_-J6peuWH2GgQ",
+    "file_unique_id": "AgADpwEAAuzE7wQ",
+    "file_size": 21252
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHH9kWMtVnaWx4UYAap8mtQAAqkBAALsxO8E-Tejjm3U20O1M4INAAQBAAdtAANhiAACGgQ",
+     "file_unique_id": "AQADtTOCDQAEYYgAAg",
+     "file_size": 5100,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBx_ZFjLVZ2lseFGAGqfJrUAAKpAQAC7MTvBPk3o45t1NtDGgQ",
+    "file_unique_id": "AgADqQEAAuzE7wQ",
+    "file_size": 28848
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude06",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHHII1fcorzTTIQEE4Mh4p4AAqsBAALsxO8Ep0BfpForCeP0IUsNAAQBAAdtAAO0YwACGgQ",
+     "file_unique_id": "AQAD9CFLDQAEtGMAAg",
+     "file_size": 3690,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBxyCNX3KK800yEBBODIeKeAAKrAQAC7MTvBKdAX6RaKwnjGgQ",
+    "file_unique_id": "AgADqwEAAuzE7wQ",
+    "file_size": 18568
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude1c",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHZnzXJRiniUdtNoDYPR5Q8AAq4BAALsxO8EtjeDbaJ1-Y5qMoINAAQBAAdtAAMklQACGgQ",
+     "file_unique_id": "AQADajKCDQAEJJUAAg",
+     "file_size": 4192,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB2Z81yUYp4lHbTaA2D0eUPAAKuAQAC7MTvBLY3g22idfmOGgQ",
+    "file_unique_id": "AgADrgEAAuzE7wQ",
+    "file_size": 19458
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd17",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEAebBwoJIw_WoV0Vb1LsVuMAArABAALsxO8EHi40SgqLwH8_LYINAAQBAAdtAAMWhgACGgQ",
+     "file_unique_id": "AQADPy2CDQAEFoYAAg",
+     "file_size": 4936,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAHmwcKCSMP1qFdFW9S7FbjAAKwAQAC7MTvBB4uNEoKi8B_GgQ",
+    "file_unique_id": "AgADsAEAAuzE7wQ",
+    "file_size": 38840
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc4a",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECIahG1miVSWmFRBu_ecvwgAArIBAALsxO8ESW_hiRJU5NezOYINAAQBAAdtAAMOiwACGgQ",
+     "file_unique_id": "AQADszmCDQAEDosAAg",
+     "file_size": 4836,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAiGoRtZolUlphUQbv3nL8IAAKyAQAC7MTvBElv4YkSVOTXGgQ",
+    "file_unique_id": "AgADsgEAAuzE7wQ",
+    "file_size": 31884
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc79",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEINPZwFp4LqGX6nlIXGlgCcAArQBAALsxO8E6hOE1AABwJsCcT6CDQAEAQAHbQADc4cAAhoE",
+     "file_unique_id": "AQADcT6CDQAEc4cAAg",
+     "file_size": 6576,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCDT2cBaeC6hl-p5SFxpYAnAAK0AQAC7MTvBOoThNQAAcCbAhoE",
+    "file_unique_id": "AgADtAEAAuzE7wQ",
+    "file_size": 37418
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEKGME2illAScI7R3jegoqAADtgEAAuzE7wRIu2ySdpKttL0hgg0ABAEAB20AA7uiAAIaBA",
+     "file_unique_id": "AQADvSGCDQAEu6IAAg",
+     "file_size": 4496,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRChjBNopZQEnCO0d43oKKgAA7YBAALsxO8ESLtsknaSrbQaBA",
+    "file_unique_id": "AgADtgEAAuzE7wQ",
+    "file_size": 13538
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEPWx4F6VJyjOXPmOhYh8A5wAArcBAALsxO8EPKZYghzqzwLgSEsNAAQBAAdtAAORcgACGgQ",
+     "file_unique_id": "AQAD4EhLDQAEkXIAAg",
+     "file_size": 4626,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD1seBelScozlz5joWIfAOcAAK3AQAC7MTvBDymWIIc6s8CGgQ",
+    "file_unique_id": "AgADtwEAAuzE7wQ",
+    "file_size": 15612
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEM3oKLdeGp6CFBVy1nOY7TEAArgBAALsxO8E6a5vqWlFgY0XKEsNAAQBAAdtAAOIgAACGgQ",
+     "file_unique_id": "AQADFyhLDQAEiIAAAg",
+     "file_size": 4204,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDN6Ci3XhqeghQVctZzmO0xAAK4AQAC7MTvBOmub6lpRYGNGgQ",
+    "file_unique_id": "AgADuAEAAuzE7wQ",
+    "file_size": 13514
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEErDp9GoV9sbkPq5jyp01XwAArkBAALsxO8E6vwDXUXmz5UZL4INAAQBAAdtAAPloAACGgQ",
+     "file_unique_id": "AQADGS-CDQAE5aAAAg",
+     "file_size": 3654,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBKw6fRqFfbG5D6uY8qdNV8AAK5AQAC7MTvBOr8A11F5s-VGgQ",
+    "file_unique_id": "AgADuQEAAuzE7wQ",
+    "file_size": 11386
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECgkcddGv_I8kztAI-3r9VoAAroBAALsxO8ESaYk59B7Y0V5IEsNAAQBAAdtAAPWdgACGgQ",
+     "file_unique_id": "AQADeSBLDQAE1nYAAg",
+     "file_size": 4988,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAoJHHXRr_yPJM7QCPt6_VaAAK6AQAC7MTvBEmmJOfQe2NFGgQ",
+    "file_unique_id": "AgADugEAAuzE7wQ",
+    "file_size": 17338
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEMeUquE4n-GckfJKZX8BeBAAArsBAALsxO8E3UC8WNzzIEdCR0sNAAQBAAdtAAMyegACGgQ",
+     "file_unique_id": "AQADQkdLDQAEMnoAAg",
+     "file_size": 3144,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDHlKrhOJ_hnJHySmV_AXgQAAK7AQAC7MTvBN1AvFjc8yBHGgQ",
+    "file_unique_id": "AgADuwEAAuzE7wQ",
+    "file_size": 10284
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEE1Ig9ciCSQOdSvv3lOHK2cAArwBAALsxO8ERBOKp4jJRfv3F0sNAAQBAAdtAAN4egACGgQ",
+     "file_unique_id": "AQAD9xdLDQAEeHoAAg",
+     "file_size": 4200,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBNSIPXIgkkDnUr795ThytnAAK8AQAC7MTvBEQTiqeIyUX7GgQ",
+    "file_unique_id": "AgADvAEAAuzE7wQ",
+    "file_size": 12968
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEKIXEwZZVimsJLS6md5NTRkAAr0BAALsxO8E_vaMEh4kdSSIKoINAAQBAAdtAAOzoQACGgQ",
+     "file_unique_id": "AQADiCqCDQAEs6EAAg",
+     "file_size": 4948,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCiFxMGWVYprCS0upneTU0ZAAK9AQAC7MTvBP72jBIeJHUkGgQ",
+    "file_unique_id": "AgADvQEAAuzE7wQ",
+    "file_size": 15934
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEOjRKg0GlfX1amJbEmYq3n4AAr4BAALsxO8EsTtaOrsK9YPGI0sNAAQBAAdtAAPddgACGgQ",
+     "file_unique_id": "AQADxiNLDQAE3XYAAg",
+     "file_size": 3200,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDo0SoNBpX19WpiWxJmKt5-AAK-AQAC7MTvBLE7Wjq7CvWDGgQ",
+    "file_unique_id": "AgADvgEAAuzE7wQ",
+    "file_size": 10722
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEEcFlSjGDYs7o-EDWAa6LIIAAr8BAALsxO8ElknDaUY96B5SGksNAAQBAAdtAANTdQACGgQ",
+     "file_unique_id": "AQADUhpLDQAEU3UAAg",
+     "file_size": 5192,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBHBZUoxg2LO6PhA1gGuiyCAAK_AQAC7MTvBJZJw2lGPegeGgQ",
+    "file_unique_id": "AgADvwEAAuzE7wQ",
+    "file_size": 15646
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEH_1YFaoKd1Cp0N0mv9l83oAAsABAALsxO8ExJM3ChYvdECYRUsNAAQBAAdtAAONcQACGgQ",
+     "file_unique_id": "AQADmEVLDQAEjXEAAg",
+     "file_size": 4902,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB_9WBWqCndQqdDdJr_ZfN6AALAAQAC7MTvBMSTNwoWL3RAGgQ",
+    "file_unique_id": "AgADwAEAAuzE7wQ",
+    "file_size": 17382
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEPtFSkJxuig5_zeXqwMe2QIAAsEBAALsxO8EB35g_9z-Ndf4MoINAAQBAAdtAAMRqgACGgQ",
+     "file_unique_id": "AQAD-DKCDQAEEaoAAg",
+     "file_size": 5366,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD7RUpCcbooOf83l6sDHtkCAALBAQAC7MTvBAd-YP_c_jXXGgQ",
+    "file_unique_id": "AgADwQEAAuzE7wQ",
+    "file_size": 16276
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECXDg9fnLEiLAxOq7d008TEAAsIBAALsxO8E1wLwywk_8RlrJoINAAQBAAdtAAPYpwACGgQ",
+     "file_unique_id": "AQADayaCDQAE2KcAAg",
+     "file_size": 3078,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAlw4PX5yxIiwMTqu3dNPExAALCAQAC7MTvBNcC8MsJP_EZGgQ",
+    "file_unique_id": "AgADwgEAAuzE7wQ",
+    "file_size": 10124
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBq--_tEt__FzJaFoVxzwWQAAsMBAALsxO8EkrhuC7uPsn_IKYINAAQBAAdtAAMunAACGgQ",
+     "file_unique_id": "AQADyCmCDQAELpwAAg",
+     "file_size": 4252,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAavvv7RLf_xcyWhaFcc8FkAALDAQAC7MTvBJK4bgu7j7J_GgQ",
+    "file_unique_id": "AgADwwEAAuzE7wQ",
+    "file_size": 15006
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEE4j45hPmSnxRCIC44yHsBUAAsQBAALsxO8EOmZ5PYH9G_T8LIINAAQBAAdtAAMDngACGgQ",
+     "file_unique_id": "AQAD_CyCDQAEA54AAg",
+     "file_size": 4268,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBOI-OYT5kp8UQiAuOMh7AVAALEAQAC7MTvBDpmeT2B_Rv0GgQ",
+    "file_unique_id": "AgADxAEAAuzE7wQ",
+    "file_size": 13606
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHf3-dgq7dFLHwE1KHu0xl8AAsUBAALsxO8EgSz3akEJJNAPLIINAAQBAAdtAAPzmgACGgQ",
+     "file_unique_id": "AQADDyyCDQAE85oAAg",
+     "file_size": 4070,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB39_nYKu3RSx8BNSh7tMZfAALFAQAC7MTvBIEs92pBCSTQGgQ",
+    "file_unique_id": "AgADxQEAAuzE7wQ",
+    "file_size": 12452
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEE4cnUPH0YlZVbxhZGCNOvIAAsYBAALsxO8EReyP4-WrshJFSksNAAQBAAdtAAMYbQACGgQ",
+     "file_unique_id": "AQADRUpLDQAEGG0AAg",
+     "file_size": 2676,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBOHJ1Dx9GJWVW8YWRgjTryAALGAQAC7MTvBEXsj-Plq7ISGgQ",
+    "file_unique_id": "AgADxgEAAuzE7wQ",
+    "file_size": 8568
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEObyNOQkSTSL18ul_YmkXFQAAscBAALsxO8E3WKSlrOkZF_JNYINAAQBAAdtAANHmQACGgQ",
+     "file_unique_id": "AQADyTWCDQAER5kAAg",
+     "file_size": 3852,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDm8jTkJEk0i9fLpf2JpFxUAALHAQAC7MTvBN1ikpazpGRfGgQ",
+    "file_unique_id": "AgADxwEAAuzE7wQ",
+    "file_size": 12074
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFbfd0SHYFBIJkwvRkd7QQQAAsgBAALsxO8EMC3r9TM1IiJbPoINAAQBAAdtAAPFmgACGgQ",
+     "file_unique_id": "AQADWz6CDQAExZoAAg",
+     "file_size": 4164,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBW33dEh2BQSCZML0ZHe0EEAALIAQAC7MTvBDAt6_UzNSIiGgQ",
+    "file_unique_id": "AgADyAEAAuzE7wQ",
+    "file_size": 12486
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFwlx5cS8OM0roqpem-IlD8AAskBAALsxO8E_AVIUMFcSvldNoINAAQBAAdtAAO0oAACGgQ",
+     "file_unique_id": "AQADXTaCDQAEtKAAAg",
+     "file_size": 5046,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBcJceXEvDjNK6KqXpviJQ_AALJAQAC7MTvBPwFSFDBXEr5GgQ",
+    "file_unique_id": "AgADyQEAAuzE7wQ",
+    "file_size": 17166
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udcc3",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEAaO6tNxu7qIDRKvWvexiz8AAsoBAALsxO8EWivIf5ebhvcRUUsNAAQBAAdtAAMIcQACGgQ",
+     "file_unique_id": "AQADEVFLDQAECHEAAg",
+     "file_size": 2270,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAGjurTcbu6iA0Sr1r3sYs_AALKAQAC7MTvBForyH-Xm4b3GgQ",
+    "file_unique_id": "AgADygEAAuzE7wQ",
+    "file_size": 7714
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude1d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEPMidd1ZD5y2-i2gW6NrHwUAAssBAALsxO8E8STT3KBEV-Z1R0sNAAQBAAdtAANrAQEAARoE",
+     "file_unique_id": "AQADdUdLDQAEawEBAAE",
+     "file_size": 4956,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDzInXdWQ-ctvotoFujax8FAALLAQAC7MTvBPEk09ygRFfmGgQ",
+    "file_unique_id": "AgADywEAAuzE7wQ",
+    "file_size": 25574
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc68",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEHcUYuvpM1pqo3Seew8ZrgMAAswBAALsxO8EP9smtMwPpBB7K7cNAAQBAAdtAANtRwACGgQ",
+     "file_unique_id": "AQADeyu3DQAEbUcAAg",
+     "file_size": 5210,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRB3FGLr6TNaaqN0nnsPGa4DAALMAQAC7MTvBD_bJrTMD6QQGgQ",
+    "file_unique_id": "AgADzAEAAuzE7wQ",
+    "file_size": 38192
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude15",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFol6V_GGovpCrisKBz8Q4oAAs0BAALsxO8Efd-_WJ-M7KDzMbcNAAQBAAdtAANxRgACGgQ",
+     "file_unique_id": "AQAD8zG3DQAEcUYAAg",
+     "file_size": 3568,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBaJelfxhqL6Qq4rCgc_EOKAALNAQAC7MTvBH3fv1ifjOygGgQ",
+    "file_unique_id": "AgADzQEAAuzE7wQ",
+    "file_size": 20070
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude4b",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEFfloQABl-VBcnePW8msx4SVAALOAQAC7MTvBOxZzGxhPPStVBa3DQAEAQAHbQADz00AAhoE",
+     "file_unique_id": "AQADVBa3DQAEz00AAg",
+     "file_size": 3750,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRBX5aEAAZflQXJ3j1vJrMeElQACzgEAAuzE7wTsWcxsYTz0rRoE",
+    "file_unique_id": "AgADzgEAAuzE7wQ",
+    "file_size": 20888
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude29",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEIBAmiDFf6hmRfjglCdw8CIAAs8BAALsxO8EDFbGdZQ8qVu7KEsNAAQBAAdtAAOhCwEAARoE",
+     "file_unique_id": "AQADuyhLDQAEoQsBAAE",
+     "file_size": 4590,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCAQJogxX-oZkX44JQncPAiAALPAQAC7MTvBAxWxnWUPKlbGgQ",
+    "file_unique_id": "AgADzwEAAuzE7wQ",
+    "file_size": 24114
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude1d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEIZYXnzuJgUkopc-zPAtAAH-AALQAQAC7MTvBFwu4mt1HYkFGR1LDQAEAQAHbQADFgIBAAEaBA",
+     "file_unique_id": "AQADGR1LDQAEFgIBAAE",
+     "file_size": 4066,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCGWF587iYFJKKXPszwLQAB_gAC0AEAAuzE7wRcLuJrdR2JBRoE",
+    "file_unique_id": "AgAD0AEAAuzE7wQ",
+    "file_size": 21342
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude33",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEBwof4FlkJ0zuVhwM9rPpi0AAtEBAALsxO8Es5TGgn22N4yFELcNAAQBAAdtAAMMSQACGgQ",
+     "file_unique_id": "AQADhRC3DQAEDEkAAg",
+     "file_size": 3880,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAcKH-BZZCdM7lYcDPaz6YtAALRAQAC7MTvBLOUxoJ9tjeMGgQ",
+    "file_unique_id": "AgAD0QEAAuzE7wQ",
+    "file_size": 21086
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude2e",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NECIVUEKlhxsWxq839TQhfqEAAtIBAALsxO8EqtnfdHziCbJWJ0sNAAQBAAdtAAP8EwEAARoE",
+     "file_unique_id": "AQADVidLDQAE_BMBAAE",
+     "file_size": 4706,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAiFVBCpYcbFsavN_U0IX6hAALSAQAC7MTvBKrZ33R84gmyGgQ",
+    "file_unique_id": "AgAD0gEAAuzE7wQ",
+    "file_size": 25766
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude11",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEPb3Q2Grtdki_BY18JCaBRIAAtMBAALsxO8ENWMX8H1JPzaiFLcNAAQBAAdtAANiTQACGgQ",
+     "file_unique_id": "AQADohS3DQAEYk0AAg",
+     "file_size": 5232,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD290Nhq7XZIvwWNfCQmgUSAALTAQAC7MTvBDVjF_B9ST82GgQ",
+    "file_unique_id": "AgAD0wEAAuzE7wQ",
+    "file_size": 27516
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udc37",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEObdDBVCjRq8WxtujIMfarwAAtQBAALsxO8EifBrdrfv4YINM7cNAAQBAAdtAAMTUQACGgQ",
+     "file_unique_id": "AQADDTO3DQAEE1EAAg",
+     "file_size": 4032,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRDm3QwVQo0avFsbboyDH2q8AALUAQAC7MTvBInwa3a37-GCGgQ",
+    "file_unique_id": "AgAD1AEAAuzE7wQ",
+    "file_size": 23412
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\udca6",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEDEIcuINtQvL_Pp_p7VETuwAAtUBAALsxO8EErJFoKerN0jQILcNAAQBAAdtAAO4TAACGgQ",
+     "file_unique_id": "AQAD0CC3DQAEuEwAAg",
+     "file_size": 4622,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRAxCHLiDbULy_z6f6e1RE7sAALVAQAC7MTvBBKyRaCnqzdIGgQ",
+    "file_unique_id": "AgAD1QEAAuzE7wQ",
+    "file_size": 27320
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd21",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJoMsyO2rBA6BLovdyQ54BgAAtYBAALsxO8EA6yKC-w8IdkXRUsNAAQBAAdtAAOTBQEAARoE",
+     "file_unique_id": "AQADF0VLDQAEkwUBAAE",
+     "file_size": 2678,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCaDLMjtqwQOgS6L3ckOeAYAALWAQAC7MTvBAOsigvsPCHZGgQ",
+    "file_unique_id": "AgAD1gEAAuzE7wQ",
+    "file_size": 13924
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83d\ude2d",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEP4-2ea5-ZbHjzREg7O0h5QAAtcBAALsxO8EbDg2JRGIF4psJ0sNAAQBAAdtAAN6CAEAARoE",
+     "file_unique_id": "AQADbCdLDQAEeggBAAE",
+     "file_size": 3756,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRD-PtnmufmWx480RIOztIeUAALXAQAC7MTvBGw4NiURiBeKGgQ",
+    "file_unique_id": "AgAD1wEAAuzE7wQ",
+    "file_size": 19238
+   },
+   {
+    "width": 512,
+    "height": 512,
+    "emoji": "\ud83e\udd21",
+    "set_name": "mops_dyadya_pyos",
+    "is_animated": false,
+    "thumb": {
+     "file_id": "AAMCAgADFQABXv9NEJOHIQ1cvNEOshTk3LyTs04AAtgBAALsxO8EHu9rxRBa_UvOUUsNAAQBAAdtAANRBQEAARoE",
+     "file_unique_id": "AQADzlFLDQAEUQUBAAE",
+     "file_size": 4522,
+     "width": 128,
+     "height": 128
+    },
+    "file_id": "CAACAgIAAxUAAV7_TRCThyENXLzRDrIU5Ny8k7NOAALYAQAC7MTvBB7va8UQWv1LGgQ",
+    "file_unique_id": "AgAD2AEAAuzE7wQ",
+    "file_size": 23414
+   }
+  ]
+ }
+}
