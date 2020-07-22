@@ -151,7 +151,7 @@ def message_set(update, context):
         users_id.append(update.message.chat_id)
 
     time_now = datetime.now()
-    task_time = re.search(r'(\d{,2})(:)(\d\d)', update.message.text)
+    task_time = re.search(r'(\d{,2}:\d,2})', update.message.text)
     task_date = re.search(r'(\d{1,2}\.\d{1,2})(\.\d{,4})?', update.message.text)
 
     if task_time and not re.search(r'(З|завтра)', update.message.text) and not task_date:
