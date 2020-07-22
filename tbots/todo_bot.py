@@ -1,12 +1,10 @@
 # - *- coding: utf- 8 - *-
 
 import logging
-from telegram import KeyboardButton
-from telegram import ReplyKeyboardMarkup
-from telegram.ext import Updater
-from telegram.ext import CommandHandler, MessageHandler, Filters
 import re
 import datetime
+from telegram import KeyboardButton, ReplyKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from datetime import datetime, timedelta, timezone
 from dateutil import tz
 
@@ -31,6 +29,7 @@ def start(update, context):
           'Если не хочется писать, можно нажать на кнопки ниже.'
     markup = ReplyKeyboardMarkup(btn, one_time_keyboard=True, resize_keyboard=True)
     update.message.reply_text(msg, reply_markup=markup)
+
     if update.message.chat_id not in users_id:
         users_id.append(update.message.chat_id)
 
@@ -110,30 +109,25 @@ def unset(update, context):
 
 def todo_list_view(update, context):
     time_now = datetime.now()
-    deleted_tasks = []
-    todo_list_msg = ''
-    number = 1
+
+    deleted_tasks = [i for i in context.chat_data if context.chat_data[i]['date'] < time_now.astimezone(utc)]
+    for i in deleted_tasks:
+        del context.chat_data[i]
 
     if context.chat_data:
-        for i in context.chat_data:
-            todo_time = context.chat_data[i]['date']
+        todo_list_msg = ''
+        number = 1
 
-            if todo_time > time_now.astimezone(utc):  # удалить смещение часового пояса
-                todo_list_msg += f'{number}. {i.capitalize()}\n'
-                number += 1
-            else:
-                deleted_tasks.append(i)
+        for i in context.chat_data:
+            todo_list_msg += f'{number}. {i.capitalize()}\n'
+            number += 1
 
         if todo_list_msg:
             update.message.reply_text(text=f'{todo_list_msg}\n'
                                            '🗑 Чтобы удалить задачу напиши /unset <номер в списке>')
-        else:
-            update.message.reply_text(text='У тебя нет задач')
+
     else:
         update.message.reply_text(text='У тебя нет задач')
-
-    for i in deleted_tasks:
-        del context.chat_data[i]
 
 
 def broadcast_message(update, context):
@@ -153,6 +147,9 @@ def help():
 
 
 def message_set(update, context):
+    if update.message.chat_id not in users_id:
+        users_id.append(update.message.chat_id)
+
     time_now = datetime.now()
     task_time = re.search(r'(\d{,2})(:)(\d\d)', update.message.text)
     task_date = re.search(r'(\d{1,2}\.\d{1,2})(\.\d{,4})?', update.message.text)
@@ -161,7 +158,6 @@ def message_set(update, context):
         task_time = task_time.group(0).split(':')
         task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]),
                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-
         if task_time > time_now.astimezone(utc):
             new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
                                                    name=update.message.text)
@@ -173,7 +169,6 @@ def message_set(update, context):
     elif task_time and task_date and not re.search(r'(З|завтра)', update.message.text):
         task_time = task_time.group(0).split(':')
         task_date = task_date.group(0).split('.')
-
         if len(task_date) == 3 and len(task_date[2]) == 4:
             task_time = datetime(int(task_date[2]), int(task_date[1]), int(task_date[0]), int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
@@ -183,7 +178,6 @@ def message_set(update, context):
         else:
             task_time = datetime(time_now.year, int(task_date[1]), int(task_date[0]), int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-
         if task_time > time_now.astimezone(utc):
             new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
                                                    name=update.message.text)
@@ -210,7 +204,9 @@ def message_set(update, context):
         else:
             update.message.reply_text("Это время уже в прошлом...")
 
-
+    deleted_tasks = [i for i in context.chat_data if context.chat_data[i]['date'] < time_now.astimezone(utc)]
+    for i in deleted_tasks:
+        del context.chat_data[i]
 
 
 def message_null(update, context):
@@ -219,6 +215,11 @@ def message_null(update, context):
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
+
+
+# def test(update, context):
+#     deleted_tasks = [i for i in context.chat_data]
+#     update.message.reply_text(deleted_tasks)
 
 
 def main():
@@ -237,6 +238,7 @@ def main():
     dp.add_handler(CommandHandler("todo_list", todo_list_view, pass_chat_data=True))
     dp.add_handler(CommandHandler("1984_admin", broadcast_message))
     dp.add_handler(CommandHandler("1984_admin_save", save_users_list))
+    # dp.add_handler(CommandHandler("test", test))
     dp.add_error_handler(error)
 
     updater.start_polling()
