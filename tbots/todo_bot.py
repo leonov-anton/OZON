@@ -12,13 +12,14 @@ import datetime
 from datetime import datetime, timedelta, timezone
 from dateutil import tz
 
-
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
 logger = logging.getLogger(__name__)
 
 users_id = []
+
+utc = tz.tzutc()
 
 
 def start(update, context):
@@ -41,7 +42,6 @@ def alarm(context):
 
 
 def set_timer(update, context):
-
     task_time = ''
     task_date = ''
 
@@ -54,50 +54,47 @@ def set_timer(update, context):
     if task_time == True and task_date == False and re.search(r'(З|завтра)', update.message.text[5:]) == False:
         task_time = task_time.split(':')
         time_now = datetime.now()
-        utc = tz.tzutc()
         due = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]),
                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
         new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text[5:])
         context.chat_data[str(update.message.text[5:])] = new_timer
-        update.message.reply_text("Запись внесена в список дел.")
+        update.message.reply_text("Запись внесена в список дел")
 
     elif task_time and task_date:
         task_time = task_time.split(':')
         task_date = task_date.split('.')
         time_now = datetime.now()
-        utc = tz.tzutc()
         if len(task_date) == 3:
             due = datetime(int(task_date[2]), int(task_date[1]), int(task_date[0]), int(task_time[0]),
-                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text[5:])
+                           int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
+            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
+                                                   name=update.message.text[5:])
         else:
             due = datetime(time_now.year, int(task_date[1]), int(task_date[0]), int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
             new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
                                                    name=update.message.text[5:])
         context.chat_data[str(update.message.text[5:])] = new_timer
-        update.message.reply_text("Запись внесена в список дел.")
+        update.message.reply_text("Запись внесена в список дел")
 
     elif re.search(r'(З|завтра)', update.message.text[5:]) and task_time:
         task_time = task_time.split(':')
         time_now = datetime.now()
-        utc = tz.tzutc()
         try:
             due = datetime(time_now.year, time_now.month, time_now.day + 1, int(task_time[0]),
-                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
+                           int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
             new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
-                                                name=update.message.text[5:])
+                                                   name=update.message.text[5:])
         except:
             due = datetime(time_now.year, time_now.month + 1, 1, int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
             new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
                                                    name=update.message.text[5:])
         context.chat_data[str(update.message.text[5:])] = new_timer
-        update.message.reply_text("Запись внесена в список дел.")
+        update.message.reply_text("Запись внесена в список дел")
 
     else:
-        update.message.reply_text("Не указано время. Надо писать время в формате ЧЧ:ММ.")
-
+        update.message.reply_text("Не указано время. Необходимо писать время в формате ЧЧ:ММ")
 
 
 def unset(update, context):
@@ -107,7 +104,7 @@ def unset(update, context):
         timer = context.chat_data[todo_list[number]]
         timer.schedule_removal()
         del context.chat_data[todo_list[number]]
-        update.message.reply_text("Задача удалена.")
+        update.message.reply_text("Задача удалена")
     except(IndexError, ValueError):
         update.message.reply_text("Нужно писать: /unset <номер в списке>")
 
@@ -120,32 +117,21 @@ def todo_list_view(update, context):
 
     if context.chat_data:
         for i in context.chat_data:
-            todo_time = re.search(r'(\d\d)(:)(\d\d)', i)
-            todo_time = todo_time.group(0)
-            todo_time = todo_time.split(':')
+            todo_time = context.chat_data[i]['date']
 
-            if int(todo_time[0]) > time_now.hour:
-                number_str = f'{number}. '
-                todo_list_msg += number_str + i.capitalize()
-                todo_list_msg += '\n'
+            if todo_time > time_now.astimezone(utc):  # удалить смещение часового пояса
+                todo_list_msg += f'{number}. {i.capitalize()}\n'
                 number += 1
-
-            elif int(todo_time[0]) == time_now.hour and int(todo_time[1]) > time_now.minute:
-                number_str = f'{number}. '
-                todo_list_msg += number_str + i.capitalize()
-                todo_list_msg += '\n'
-                number += 1
-
             else:
                 deleted_tasks.append(i)
 
         if todo_list_msg:
             update.message.reply_text(text=f'{todo_list_msg}\n'
-                                        '🗑 Чтобы удалить задачу напиши /unset <номер в списке>.')
+                                           '🗑 Чтобы удалить задачу напиши /unset <номер в списке>')
         else:
-            update.message.reply_text(text='У тебя нет задач.')
+            update.message.reply_text(text='У тебя нет задач')
     else:
-        update.message.reply_text(text='У тебя нет задач.')
+        update.message.reply_text(text='У тебя нет задач')
 
     for i in deleted_tasks:
         del context.chat_data[i]
@@ -168,69 +154,62 @@ def help():
 
 
 def msg_set(update, context):
-
-    text = update.message.text.split(' ')
-
-    task_time = ''
-    task_date = ''
-
-    for i in text:
-        if re.search(r'(\d\d)(:)(\d\d)', i):
-            task_time = i
-        elif re.search(r'(\d\d)(\.)(\d\d)', i) or re.search(r'(\d\d)(\.)(\d\d)(\.)(\d\d\d\d)', i) or re.search(r'(\d\d)(\.)(\d\d)(\.)(\d\d)', i):
-            task_date = i
+    time_now = datetime.now()
+    task_time = re.search(r'(\d\d)(:)(\d\d)', update.message.text)
+    task_date = re.search(r'(\d\d)(\.)(\d\d)(\.)(\d\d)', update.message.text)
 
     if task_time and not re.search(r'(З|завтра)', update.message.text) and not task_date:
-        task_time = task_time.split(':')
-        time_now = datetime.now()
-        utc = tz.tzutc()
+        task_time = task_time.group(0).split(':')
         due = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]),
                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-        new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
-        context.chat_data[str(update.message.text)] = {'date': due, 'msg': new_timer}
-        update.message.reply_text("Запись внесена в список дел.")
+
+        if due > time_now.astimezone(utc):
+            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
+            context.chat_data[str(update.message.text)] = {'date': due, 'msg': new_timer}
+            update.message.reply_text("Запись внесена в список дел")
+        else:
+            update.message.reply_text("Это время уже в прошлом...")
 
     elif task_time and task_date and not re.search(r'(З|завтра)', update.message.text):
-        task_time = task_time.split(':')
-        task_date = task_date.split('.')
-        time_now = datetime.now()
-        utc = tz.tzutc()
-        print(type(task_date[0]))
+        task_time = task_time.group(0).split(':')
+        task_date = task_date.group(0).split('.')
+
         if len(task_date) == 3 and len(task_date[2]) == 4:
             due = datetime(int(task_date[2]), int(task_date[1]), int(task_date[0]), int(task_time[0]),
-                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
+                           int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
         elif len(task_date) == 3 and len(task_date[2]) == 2:
             due = datetime(int(task_date[2]) + 2000, int(task_date[1]), int(task_date[0]), int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
         else:
             due = datetime(time_now.year, int(task_date[1]), int(task_date[0]), int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
-                                                   name=update.message.text)
-        context.chat_data[str(update.message.text)] = new_timer
-        update.message.reply_text("Запись внесена в список дел.")
+
+        if due > time_now.astimezone(utc):
+            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
+            context.chat_data[str(update.message.text)] = {'date': due, 'msg': new_timer}
+            update.message.reply_text("Запись внесена в список дел")
+        else:
+            update.message.reply_text("Это время уже в прошлом...")
 
     elif re.search(r'(З|завтра)', update.message.text) and task_time:
-        task_time = task_time.split(':')
-        time_now = datetime.now()
-        utc = tz.tzutc()
+        task_time = task_time.group(0).split(':')
+
         try:
             due = datetime(time_now.year, time_now.month, time_now.day + 1, int(task_time[0]),
-                        int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
-                                                name=update.message.text)
+                           int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
         except:
             due = datetime(time_now.year, time_now.month + 1, 1, int(task_time[0]),
                            int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id,
-                                                   name=update.message.text)
-        context.chat_data[update.message.text] = new_timer
-        update.message.reply_text("Запись внесена в список дел.")
+
+        if due > time_now.astimezone(utc):
+            new_timer = context.job_queue.run_once(alarm, due, context=update.message.chat_id, name=update.message.text)
+            context.chat_data[str(update.message.text)] = {'date': due, 'msg': new_timer}
+            update.message.reply_text("Запись внесена в список дел")
+        else:
+            update.message.reply_text("Это время уже в прошлом...")
 
     else:
-        update.message.reply_text("Не указано время. Надо писать время в формате ЧЧ:ММ.")
+        update.message.reply_text("Не указано время. Неободимо писать время в формате ЧЧ:ММ.")
 
 
 def error(update, context):
