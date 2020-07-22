@@ -1,7 +1,7 @@
 import requests
 import json
 
-token = "-"  # нужно ввести токен
+token = "1329196465:AAEulFiMHlk4msfrQ6LdnkckpbedJPBTQRs"  # нужно ввести токен
 
 url = str('https://api.telegram.org/bot' + token + '/')
 
@@ -24,6 +24,7 @@ def polling():
             msg = {'chat_id': req['result'][0]['message']['from']['id'],
                    'text': 'Привет!'}
             send_msg = requests.post(str(url + 'sendMessage'), data=msg)
+        print(req)
 
 
 polling()
