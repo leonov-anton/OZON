@@ -15,6 +15,7 @@ class TodoModel(QtCore.QAbstractListModel):
         self.todos = todos or []
 
     def data(self, index, role):
+
         if role == Qt.DisplayRole:
             _, text = self.todos[index.row()]
             return text
@@ -25,6 +26,10 @@ class TodoModel(QtCore.QAbstractListModel):
                 return tick
             else:
                 return tick2
+
+        if role == Qt.EditRole:
+            _, text = self.todos[index.row()]
+            return text
 
     def rowCount(self, index):
         return len(self.todos)
@@ -67,7 +72,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             row = index.row()
             ststus, text = self.model.todos[row]
             self.model.todos[row] = (True, text)
-            self.model.dataChanged.emit(index,index)
+            self.model.dataChanged.emit(index, index)
             self.todoView.clearSelection()
             self.save()
 
@@ -83,6 +88,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             file.close()
         except Exception:
             pass
+
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()

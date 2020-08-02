@@ -27,5 +27,4 @@ for i in range(50000): # нужно большое количество эпох
     synpatic_waight_1 += change_1
     synpatic_waight_2 += change_2
 
-print(out_1)
 print(out_2)
