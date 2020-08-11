@@ -26,8 +26,8 @@ week_day_dict = {'пн': 0, 'вт': 1, 'ср': 2, 'чт': 3, 'пт': 4, 'сб': 
 week_day_pattern = str(r'((\b(пн|вт|вторник|ср|чт|четверг|пт|сб|вс|воскресенье)\b)|(понедель|сред(у|a)|пятниц|суббот))')
 
 tf = TimezoneFinder()
-longitude = int(37.625817)
-latitude = int(55.79288)
+longitude = int(37)
+latitude = int(55)
 msc_tz = pytz.timezone(tf.certain_timezone_at(lng=longitude, lat=latitude))
 
 
