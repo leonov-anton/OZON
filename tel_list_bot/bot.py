@@ -14,9 +14,7 @@ logger = logging.getLogger(__name__)
 
 ADD_EMAIL, ADD_COMPANY = range(2)
 
-reply_keyboard = [
-    ['Закончить'],
-]
+reply_keyboard = [['Закончить'],]
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 
 
