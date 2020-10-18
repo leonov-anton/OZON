@@ -117,7 +117,7 @@ def main():
 
     dp = updater.dispatcher
 
-    conv_handler = ConversationHandler(
+    con_handler = ConversationHandler(
         entry_points=[MessageHandler(Filters.contact, add_contact)],
         states={
             ADD_EMAIL: [
@@ -138,7 +138,7 @@ def main():
         fallbacks=[MessageHandler(Filters.regex('^Закончить$'), done)],
     )
 
-    dp.add_handler(conv_handler)
+    dp.add_handler(con_handler)
 
     dp.add_handler(MessageHandler(Filters.text, get_contact, pass_job_queue=True, pass_chat_data=True))
 
