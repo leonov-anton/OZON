@@ -23,8 +23,13 @@ from dateutil import tz
 #
 # print(stroka)
 
+utc = tz.tzutc()
+# t = 1596929544
+# a = datetime.fromtimestamp(t)
+#
+# print(datetime.now())
+# b = datetime.timestamp(datetime.now().astimezone(utc))
 
-# print(time.localtime())
 
 # i = 'вынести мусор в 16:00'
 #
@@ -89,3 +94,14 @@ from dateutil import tz
 #     print('2')
 # else:
 #     print('3')
+
+#
+# 'date': 1596928428
+
+
+a = {'try': 1, 'red': 2, 'blue': 3}
+
+for i in a:
+    if i != 'try':
+        print(i)
+

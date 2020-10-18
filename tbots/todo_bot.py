@@ -7,6 +7,7 @@ from telegram import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardButton, 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler, ConversationHandler
 from datetime import datetime, timedelta, timezone
 from dateutil import tz
+import time
 import pytz
 from timezonefinder import TimezoneFinder
 
@@ -18,19 +19,30 @@ logger = logging.getLogger(__name__)
 # global variables
 users_id = []
 utc = tz.tzutc()
+week_day_dict = {'пн': 0, 'вт': 1, 'ср': 2, 'чт': 3, 'пт': 4, 'сб': 5, 'вс': 6,
+                 'понедель': 0, 'понедельник': 0, 'понедельн': 0, 'понедельни': 0, 'вторник': 1, 'среду': 2, 'среда': 2,
+                 'четверг': 3, 'пятниц': 4, 'пятница': 4, 'пятницу': 4, 'суббот': 5, 'суббота': 5, 'субботу': 5,
+                 'воскресенье': 6}
+week_day_pattern = str(r'((\b(пн|вт|вторник|ср|чт|четверг|пт|сб|вс|воскресенье)\b)|(понедель|сред(у|a)|пятниц|суббот))')
 
+tf = TimezoneFinder()
+longitude = int(37)
+latitude = int(55)
+msc_tz = pytz.timezone(tf.certain_timezone_at(lng=longitude, lat=latitude))
 
 
 def start(update, context):
-    btn = [[KeyboardButton('/help'), KeyboardButton('/todo_list')]]
-    msg = 'Привет! Я бот который поможет не забыть о твоих планах. ⏰ \n\n' \
+    btn = [[KeyboardButton('help'), KeyboardButton('todo list')]]
+    name = update.message.from_user['first_name']
+    msg = f'Привет, {name}! Я бот который поможет не забыть о твоих планах. ⏰ \n\n' \
           'Напиши сообщение которое содержит время в формате ЧЧ:ММ чтобы добавить напоминание на сегодня.\n' \
-          'Или укажи дату в формета ДД.ММ.ГГ или напиши в сообщении "завтра" так же указав время. \n' \
+          'Или укажи дату в формета ДД.ММ.ГГ. Или можно написать в сообщении "завтра" так же указав время или ' \
+          'напиши в какой ближайший день недели. \n' \
           'Я пришлю тебе сообщение в указанное время.🔖\n' \
-          'Написав /todo_list можно просматривать и управлять своими напоминаниями. 📝\n' \
-          'Напиши /help если захочешь прочитать это сообщение снова.\n\n' \
+          'Написав todo list можно просматривать и управлять своими напоминаниями. 📝\n' \
+          'Напиши help если захочешь прочитать это сообщение снова.\n\n' \
           'Если не хочется писать, можно нажать на кнопки ниже.'
-    markup = ReplyKeyboardMarkup(btn, one_time_keyboard=True, resize_keyboard=True)
+    markup = ReplyKeyboardMarkup(btn, one_time_keyboard=False, resize_keyboard=True)
     update.message.reply_text(msg, reply_markup=markup)
 
     if update.message.chat_id not in users_id:
@@ -101,7 +113,7 @@ def set_timer(update, context):
 def unset(update, context):
     try:
         number = int(context.args[0]) - 1
-        todo_list = [i for i in context.chat_data]
+        todo_list = [i for i in context.chat_data if i != 'local_tz']
         timer = context.chat_data[todo_list[number]]['job']
         timer.schedule_removal()
         del context.chat_data[todo_list[number]]
@@ -113,7 +125,7 @@ def unset(update, context):
 def todo_list_view(update, context):
     time_now = datetime.now()
 
-    deleted_tasks = [i for i in context.chat_data if context.chat_data[i]['date'] < time_now.astimezone(utc)]
+    deleted_tasks = [i for i in context.chat_data if i != 'local_tz' and context.chat_data[i]['date'] < time_now.astimezone(utc)]
     for i in deleted_tasks:
         del context.chat_data[i]
 
@@ -122,23 +134,22 @@ def todo_list_view(update, context):
         number = 1
 
         for i in context.chat_data:
-            todo_list_msg += f'{number}. {i.capitalize()}\n'
-            number += 1
+            if i != 'local_tz':
+                todo_list_msg += f'{number}. {i.capitalize()}\n'
+                number += 1
 
         if todo_list_msg:
-            # update.message.reply_text(text=f'{todo_list_msg}\n'
-            # '🗑 Чтобы удалить задачу напиши /unset <номер в списке>')
-            keyboard = [[InlineKeyboardButton("🗑 Удалить", callback_data='1')]]
-            reply_markup = InlineKeyboardMarkup(keyboard)
-
             update.message.reply_text(text=f'{todo_list_msg}\n'
-                                           '🗑 Чтобы удалить задачу напиши /unset <номер в списке>',
-                                      reply_markup=reply_markup)
+            '🗑 Чтобы удалить задачу напиши /unset <номер в списке>')
+            # keyboard = [[InlineKeyboardButton("🗑 Удалить", callback_data='1')]]
+            # reply_markup = InlineKeyboardMarkup(keyboard)
+            #
+            # update.message.reply_text(text=f'{todo_list_msg}\n'
+            #                                '🗑 Чтобы удалить задачу напиши /unset <номер в списке>',
+            #                           reply_markup=reply_markup)
 
     else:
         update.message.reply_text(text='У тебя нет задач')
-
-    return CHOOSING
 
 
 def broadcast_message(update, context):
@@ -161,24 +172,41 @@ def message_set(update, context):
     if update.message.chat_id not in users_id:
         users_id.append(update.message.chat_id)
 
-    local_tz = tz.tzoffset('+3', 10800)
+    if not context.chat_data.get('local_tz'):
+        context.chat_data['local_tz'] = msc_tz
+
+    local_tz = datetime.now(context.chat_data['local_tz']).strftime('%Z%z')
+    tz_hours = int(local_tz[-5:]) // 100
+    tz_min = int(local_tz[-5:]) % 100
+
+    # tz_hours = int(context.chat_data['local_tz']['hours'])
+    # tz_min = int(context.chat_data['local_tz']['minutes'])
+
+    local_tz = tz.tzoffset('local_tz', (tz_hours * 60 * 60) + (tz_min * 60))
     time_now = datetime.now().astimezone(local_tz)
+    week_day_now = time_now.weekday()
     task_time = re.search(r'(\d{1,2})(:)(\d{1,2})', update.message.text)
     task_date = re.search(r'(\d{1,2}\.\d{1,2})(\.\d{,4})?', update.message.text)
+    task_tmm = re.search(r'(З|завтра)', update.message.text)
+    task_week_day = re.search(week_day_pattern, update.message.text)
 
-    if task_time and not re.search(r'(З|завтра)', update.message.text) and not task_date:
+    if task_time and not task_tmm and not task_date and not task_week_day:
         task_time = task_time.group(0).split(':')
         task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]),
-                             int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
+                             int(task_time[1]), tzinfo=timezone(timedelta(hours=tz_hours, minutes=tz_min))).astimezone(utc)
         if task_time > time_now.astimezone(utc):
             new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
                                                    name=update.message.text)
             context.chat_data[str(update.message.text)] = {'date': task_time, 'job': new_timer}
             update.message.reply_text("Запись внесена в список дел")
         else:
-            update.message.reply_text("Это время уже в прошлом...")
+            new_timer = context.job_queue.run_once(alarm, task_time + timedelta(days=1), context=update.message.chat_id,
+                                                   name=update.message.text)
+            context.chat_data[str(update.message.text)] = {'date': task_time + timedelta(days=1), 'job': new_timer}
+            update.message.reply_text("Запись внесена в список дел на завтра")
+            # update.message.reply_text("Это время уже в прошлом...")
 
-    elif task_time and task_date and not re.search(r'(З|завтра)', update.message.text):
+    elif task_time and task_date and not task_tmm:
         task_time = task_time.group(0).split(':')
         task_date = task_date.group(0).split('.')
         if len(task_date) == 3 and len(task_date[2]) == 4:
@@ -190,7 +218,7 @@ def message_set(update, context):
         else:
             task_time = datetime(time_now.year, int(task_date[1]), int(task_date[0]), int(task_time[0]),
                                  int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-        print(task_time)
+
         if task_time > time_now.astimezone(utc):
             new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
                                                    name=update.message.text)
@@ -199,23 +227,45 @@ def message_set(update, context):
         else:
             update.message.reply_text("Это время уже в прошлом...")
 
-    elif re.search(r'(З|завтра)', update.message.text) and task_time:
+    elif task_tmm and task_time:
         task_time = task_time.group(0).split(':')
 
-        try:
-            task_time = datetime(time_now.year, time_now.month, time_now.day + 1, int(task_time[0]),
-                                 int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
-        except:
-            task_time = datetime(time_now.year, time_now.month + 1, 1, int(task_time[0]),
-                                 int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
+        task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]),
+                             int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc) + \
+                    timedelta(days=1)
+        # except:
+        #     task_time = datetime(time_now.year, time_now.month + 1, 1, int(task_time[0]),
+        #                          int(task_time[1]), tzinfo=timezone(timedelta(hours=+3))).astimezone(utc)
 
-        if task_time > time_now.astimezone(utc):
-            new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
-                                                   name=update.message.text)
-            context.chat_data[str(update.message.text)] = {'date': task_time, 'job': new_timer}
-            update.message.reply_text("Запись внесена в список дел")
+        # if task_time > time_now.astimezone(utc):
+        new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id, name=update.message.text)
+        context.chat_data[str(update.message.text)] = {'date': task_time, 'job': new_timer}
+        update.message.reply_text("Запись внесена в список дел")
 
-    deleted_tasks = [i for i in context.chat_data if context.chat_data[i]['date'] < time_now.astimezone(utc)]
+    elif task_week_day and task_time:
+        wd = re.search(week_day_pattern, update.message.text)
+        task_time = task_time.group(0).split(':')
+
+        if week_day_dict[wd.group(0)] < week_day_now:
+            week_day_dif = 6 - week_day_now
+            task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]), int(task_time[1]),
+                                 tzinfo=timezone(timedelta(hours=+3))).astimezone(utc) + \
+                        timedelta(days=(week_day_dif + week_day_dict[wd.group(0)] + 1))
+        elif week_day_dict[wd.group(0)] > week_day_now:
+            week_day_dif = week_day_dict[wd.group(0)] - week_day_now
+            task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]), int(task_time[1]),
+                                 tzinfo=timezone(timedelta(hours=+3))).astimezone(utc) + timedelta(days=week_day_dif)
+        else:
+            task_time = datetime(time_now.year, time_now.month, time_now.day, int(task_time[0]), int(task_time[1]),
+                                 tzinfo=timezone(timedelta(hours=+3))).astimezone(utc) + timedelta(days=7)
+
+        new_timer = context.job_queue.run_once(alarm, task_time, context=update.message.chat_id,
+                                               name=update.message.text)
+        context.chat_data[str(update.message.text)] = {'date': task_time, 'job': new_timer}
+        update.message.reply_text("Запись внесена в список дел")
+
+    deleted_tasks = [i for i in context.chat_data if i != 'local_tz' and
+                     context.chat_data[i]['date'] < time_now.astimezone(utc)]
     for i in deleted_tasks:
         del context.chat_data[i]
 
@@ -234,6 +284,11 @@ def error(update, context):
 #         query.edit_message_text(text="Укажите номера задач которые вы хотите удалить")
 #
 #     return TYPING_CHOICE
+
+
+# def test(update, context):
+#     t = update.message.from_user['first_name']
+#     print(t['first_name'])
 
 
 # def unset2(update, context):
@@ -257,9 +312,9 @@ def location(update, context):
     longitude = update.message.location['longitude']
     latitude = update.message.location['latitude']
     local_tz = datetime.now(pytz.timezone(tf.certain_timezone_at(lng=longitude, lat=latitude))).strftime('%Z%z')
-    tzzz_hours = int(local_tz[-5:]) // 100
-    tzzz_minutes = int(local_tz[-5:]) % 100
-    context.chat_data['local_tz'] = {'hours': tzzz_hours, 'minutes': tzzz_minutes}
+    tz_hours = int(local_tz[-5:]) // 100
+    tz_minutes = int(local_tz[-5:]) % 100
+    context.chat_data['local_tz'] = {'hours': tz_hours, 'minutes': tz_minutes}
     update.message.reply_text("Локация сохранена")
 
 
@@ -269,19 +324,19 @@ def main():
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("help", start))
-    dp.add_handler(MessageHandler(Filters.regex(r'(\d{1,2})(:)(\d{1,2})') & ~Filters.location & ~Filters.command, message_set, pass_job_queue=True, pass_chat_data=True))
-    # dp.add_handler(MessageHandler(Filters.all & ~(Filters.regex(r'(\d{1,2})(:)(\d{1,2})') & ~Filters.location & ~Filters.command), message_null))
+    dp.add_handler(MessageHandler(Filters.text("help"), start))
+    dp.add_handler(MessageHandler(Filters.regex(r'(\d{1,2})(:)(\d{1,2})') & (~ Filters.location), message_set, pass_job_queue=True, pass_chat_data=True))
+    # dp.add_handler(MessageHandler(Filters.all & ~ (Filters.regex(r'(\d{1,2})(:)(\d{1,2})') & (~ Filters.location) & (~ Filters.command)), message_null))
     dp.add_handler(CommandHandler("set", set_timer, pass_args=True, pass_job_queue=True,
                                   pass_chat_data=True))
     dp.add_handler(CommandHandler("unset", unset, pass_chat_data=True))
-    dp.add_handler(CommandHandler("todo_list", todo_list_view, pass_chat_data=True))
+    dp.add_handler(MessageHandler(Filters.text("todo list"), todo_list_view, pass_chat_data=True))
     dp.add_handler(MessageHandler(Filters.location, location, pass_job_queue=True, pass_chat_data=True))
     dp.add_handler(CommandHandler("1984_admin", broadcast_message))
     dp.add_handler(CommandHandler("1984_admin_save", save_users_list))
     dp.add_handler(MessageHandler(Filters.location, location, pass_job_queue=True, pass_chat_data=True))
-
     # dp.add_handler(CommandHandler("test", test))
+
     dp.add_error_handler(error)
 
     updater.start_polling()
